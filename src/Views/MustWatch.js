@@ -1,5 +1,7 @@
 import React from 'react';
 
+import YoutubeEmbeddedVideo from '../Components/Youtube/YoutubeEmbeddedVideo';
+
 const mustWatchData = [
   {
     header: "PRE-FLEET RULES AND INSTRUCTIONS",
@@ -23,22 +25,17 @@ const mustWatchData = [
   }
 ];
 
-let getVideoEmbedUrl = (videoId) => {
-  return `http://www.youtube.com/embed/${videoId}?&hd=1&autohide=1&wmode=transparent`;
-};
-
-const MustWatchView = () => {
+function MustWatchView() {
   return (
     <div>
       { mustWatchData.map((data, index) => (
         <div key={index}>
           <h2>{data.header}</h2>
-          <iframe width="560" height="315" src={getVideoEmbedUrl(data.youtubeId)} frameBorder="0" allowFullScreen={true} wmode="Opaque"></iframe>
+          <YoutubeEmbeddedVideo videoId={data.youtubeId} />
         </div>
       )) }
     </div>
   );
 };
-
 
 export default MustWatchView;

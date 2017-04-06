@@ -65,7 +65,7 @@ const faqData = [
   }
 ];
 
-const FaqView = () => {
+function FaqView() {
   return (
     <div>
       { faqData.map((item, index) => (
