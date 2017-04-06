@@ -1,5 +1,7 @@
 import React from 'react';
 
+import OsmiumFittingWidget from "../Components/Eve/OsmiumFittingWidget";
+
 const fittingData = [
   {
     name: "Manticore",
@@ -24,30 +26,25 @@ const fittingData = [
 
 ];
 
-let getFittingOsmiumUrl = (fitting) => {
-  return `https://o.smium.org/api/convert/${fitting.id}/svg/${fitting.id}.svg?privatetoken=${fitting.privateToken}`;
-};
+function FittingsView() {
+  return (
+    <div>
+      { fittingData.map((ship) => (
+        <div key={ship.name}>
+          <h2>{ship.name}</h2>
+          { ship.fittings.map(fitting => (
+            <div key={fitting.id} 
+              className={fitting.title.replace(/\ /g, '-')}>
 
-const FittingsView = () => (
-  <div>
-    { fittingData.map((ship) => (
-      <div key={ship.name}>
-        <h2>{ship.name}</h2>
-        { ship.fittings.map(fitting => (
-          <div key={fitting.id} 
-            className={fitting.title.replace(/\ /g, '-')}>
-
-            <h3>{fitting.title}</h3>
-            
-            <object type="image/svg+xml" 
-              data={getFittingOsmiumUrl(fitting)}>
-            </object>
-
-          </div>
-        )) }
-      </div>
-    ) )}
-  </div>
-);
+              <h3>{fitting.title}</h3>
+              
+              <OsmiumFittingWidget fitting={fitting} />
+            </div>
+          )) }
+        </div>
+      ) )}
+    </div>
+  );
+}
 
 export default FittingsView;

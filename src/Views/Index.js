@@ -1,6 +1,6 @@
 import React from 'react';
 
-const IndexView = () => {
+function IndexView() {
   return (
     <div>
       <h2>The NPSI Community For Cloakies</h2>

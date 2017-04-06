@@ -1,0 +1,15 @@
+.navigationBar {
+  list-style: none;
+  padding: 0;
+}
+
+.navigationBar li {
+  display: inline;
+  padding: 10px 10px;
+}
+
+
+.navigationBar li a {
+  text-decoration: none;
+  color: white;
+}

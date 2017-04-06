@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import NavigationBar from './Components/NavigationBar';
+import NavigationBar from './Components/Navigation/NavigationBar';
 
 import './App.css';
 
