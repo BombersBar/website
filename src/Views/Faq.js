@@ -8,7 +8,7 @@ const faqData = [
     "body": "There is a fixed address and password in Bombers Bar channel that you use to join in the first time. You will jump in the lobby. Next step is when you x up in BB game channel and you are called into fleet. Switch to “Fleet” tab and in MOTD you will see new TS channel to use (usually BB Roam 1) together with new password. Join us there !"
   },
   {
-    "header": "2. TS Password is not working?",
+    "header": "2. TS password is not working?",
     "body": "FC was slow and lazy, he/she wrote new password in game Fleet tab but still didn’t have time to do that in TS. No worry, he/she will do that in next 1 or 2 minutes. Keep on trying."
   },
   {
