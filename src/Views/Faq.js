@@ -5,39 +5,41 @@ import React from 'react';
 const faqData = [
   {
     "header": "1. How to join us on TS?",
-    "body": "There is a fixed address and password in Bombers Bar channel that you use to join in the first time. You will jump in the lobby. Next step is when you x up in BB game channel and you are called into fleet. Switch to “Fleet” tab and in MOTD you will see new TS channel to use (usually BB Roam 1) together with new password. Join us there !"
+    "body": "There is a fixed address and password in the Bombers Bar channel that you should use to join our Teamspeak server. When you initially connect you will be in the "Main Lobby". From here you should be able to join the various public channels and hang out with your fellow cloaky space nerds. When a fleet is starting and you x up in the BB in-game channel, you are called into fleet. Switch to the in-game Fleet chat window, in the MOTD you will see the relevant TS channel to use (usually BB Roam 1) together with new password. Join us there!"
   },
   {
     "header": "2. TS password is not working?",
-    "body": "FC was slow and lazy, he/she wrote new password in game Fleet tab but still didn’t have time to do that in TS. No worry, he/she will do that in next 1 or 2 minutes. Keep on trying."
+    "body": "The FC has a lot to do and is probably a little behind. Move to the staging system and just put a reminder in the fleet chat window and your FC will update it shortly in the fleet MOTD"
   },
   {
     "header": "3. X-Up (like lemmings do)",
-    "body": "Bombers Bar is precise timewise. If fleet is said to start at 19:00, x-up at 18:50 will cause only comments of you being premature in all things in life (with, yes, hints on sexual life). One premature x-ing brings others to do the same, which is called lemmings behavior. Often some senior BB pilots intentionally provoke/troll others by starting premature x-up sequence. Ignore them, they are mean. Wait for the FC to call up for X."
+    "body": "Bombers Bar is precise timewise. If fleet is said to start at 19:00, x-ing up at 18:50 will only cause comments of you being premature in all things in life (yes, hints on sexual life). One premature x-ing up brings others to do the same, which is called lemming behavior. Often some senior BB pilots intentionally provoke/troll others by starting premature x-up sequence. Ignore them, they are mean. Wait for the FC to call up for X-up in the Bombers Bar channel MOTD."
   },
   {
     "header": "4. My mic is offline",
-    "body": "We don’t like that. By the very nature of our open fleet, we have spies in it that will report to their friends where we are in space now. Offline mike may be a clear signal to us that you are speaking in some other channel, to some other group…"
+    "body": "We don’t like people having muted mic's. Offline mic's may be a clear signal to us that you are speaking in some other channel, to some other group… So expect to be asked to unmute your mic if caught"
   },
   {
-    "header": "5. MOTD",
-    "body": "Message Of The Day. In Fleet tab have a look at MOTD, often reload it because info in it will change from time to time. Reload by left-clicking small donut icon on the top, use menu that will open. MOTD have some important info – who is the fleet BLOPS (Black Operation ship that will bridge us to the target) and who is FC. These are two most important characters in fleet, you should put them to your WATCHLIST. Rightclick the name of BLOPS, in menu that will open pick “Fleet”, “Add to Watchlist”, repeat for FC, or anybody else you want to have an eye on. You can drag and drop them to watchlist, too. 15 pilots max number in watchlist, but keep it as simple as possible. BLOPS pilot always put on the top of the list."
+    "header": "5. MOTD (Message Of The Day)",
+    "body": "In your fleet chat window have a look at the MOTD. Be sure to reload it often because info will change from time to time. Reload by left-clicking small donut icon on the top and clicking "Reload MOTD". The MOTD has some important info such as; who is the fleet BLOPS (Black Ops ship that will bridge us to the target), who is the FC and what staging system you should travel to. The BLOPS and FC pilots are two most important characters in fleet, you should put them in your WATCHLIST. To do this; Rightclick the name of the BLOPS pilot, in that menu open pick “Fleet” then “Add to Watchlist”, repeat for the FC or anybody else you want keep an eye on. You can drag and drop them from the fleet chat window to watchlist also. Keep it as simple as possible and the BLOPS pilot should always be put on the top of the list."
   },
   {
-    "header": "6. WHALING, WOLFPACK, BOMBING fleet…?",
-    "body": "Whaling fleet is all about catching a whale – big capital ship, or rorqual, but supercapitals and titans will be accepted on our killmail as well… You should use Standard whaling fit (see fitting page of this site), ONLY focused void bombs (FVB) if you can use them, otherwise no bombs. Void bombs are not equal to Focused Void Bombs! FVB are specific as they cap out target making it impossible to rep. Their area of effect is very small, maybe like a few meters. But void bombs (not focused one) have big range and will cap out your fleet members. If you shoot any other bomb, you make problem for our fleet, not for targeted whale. Again – ONLY FVB (or no bombs at all). Wolfpack fleet usually target other smaller fleet. Fit has some specifics as it adjust to smaller targets that move around and we need more application of DPS. Bombing fleet – if you can’t bomb, don’t join in. You can’t use torpedos in bombing run. Or better, you can, but only for a few secs, before you die. What kind of bombs will be used, FC will announce in MOTD when fleet starts. Don’t mix them, we should all use the same type, otherwise you destroy other pilot’s bombs and will be hated by many."
+    "header": "6. Fleet Types",
+    "body": "The general fleet types we run are; Whaling,Amarda,Wolfpack and Bombing fleets. Click here to view the Fleet Types Page which explains each fleet type in more detail."
   },
-  {
-    "header": "7. ARMADA FLEET?",
-    "body": "Armada fleet – can be any of the above type of fleets with regards to the target in question (but usually it’s whaling type). Golden Armada was a product of our advanced R&D laboratories, dealing with a specific problem – how to make our fleet invisible in Local tab (until it is to late to escape). Olmeca Gold used new EVE technologies to overcome the problem. Join Armada fleet to find out how it works."
-  },
-  {
-    "header": "8. OVERVIEW that I should have ?",
-    "body": "Many very good once are around. Usability depends on what you are doing in EVE. My experience is as follows: One tab for PvP, all reds should be here, no blues. I also added to that tab : sun and fighter drones. Sun? Should be in “Warp to” tab, yes, but I prefer to have it right there in PvP tab to align at it from the very start and not lose time. Also, when shit hits the fan, when you are locked and redpointed and shield and armor start to melt down, it’s easy to warp out. Easier then to search over other tabs and loose another sec or two. Of course, you can warp to any other random celestial as well. Fighter drones – why not having it in separate drones tab? I have them there as well, but capital pilots use to drop them and pull them back and forth when they are jammed. Again, not losing time to switch and check different tabs."
+   {
+    "header": "8. Overview that I should have?",
+    "body": "There are many very good ones around. Usability depends on what you are doing in EVE. I will list a few here and you can take your pick:
+	
+	Z-S Overview Hyperlink to https://github.com/Arziel1992/Z-S-Overview-Pack
+	Other Overview
+	Other Overview
+	
+	Drop a message in the in-game Bombers Bar channel if you are stuck and need a hand setting up"
   },
   {
     "header": "9. To cloak or not to cloak?",
-    "body": "Once you arrive to desto assigned in MOTD, stay cloaked in system. At some point FC will call us all to warp to BLOPS. YOU NEED TO BE CLOAKED, check that before you warp to BLOPS! If you warp uncloaked, you will uncloak all the others in the fleet, and put BLOPS and whole fleet in danger. And yet, there are always pilots that decloak the fleet. You are not aware that you are not cloaked. Possibly you do 3-4 things at the same time, not paying attention? Solution : Reevaluate your multitasking skills, maybe flying with BB and at the same time flying incursions with your alt, watching a porn and trying to release sexual tension you feel, all at the same time, is too much for you? Drop one by one until you can handle it."
+    "body": "Once you arrive to the staging system displayed in the MOTD, stay cloaked in system or dock at the station / citadel specified in the MOTD. At some point the FC will call us all to warp to the BLOPS pilot. YOU NEED TO BE CLOAKED, check that before you warp to the BLOPS! If you warp uncloaked, you will uncloak all others in the fleet and put the whole fleet in danger. If you repeatly uncloak the fleet you will be asked to leave. Dont be "that" guy.
   },
   {
     "header": "10. Bridge is up!",
