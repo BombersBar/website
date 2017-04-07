@@ -16,7 +16,7 @@ const faqData = [
     "body": "Bombers Bar is precise timewise. If fleet is said to start at 19:00, x-up at 18:50 will cause only comments of you being premature in all things in life (with, yes, hints on sexual life). One premature x-ing brings others to do the same, which is called lemmings behavior. Often some senior BB pilots intentionally provoke/troll others by starting premature x-up sequence. Ignore them, they are mean. Wait for the FC to call up for X."
   },
   {
-    "header": "4. My mike is offline",
+    "header": "4. My mic is offline",
     "body": "We don’t like that. By the very nature of our open fleet, we have spies in it that will report to their friends where we are in space now. Offline mike may be a clear signal to us that you are speaking in some other channel, to some other group…"
   },
   {
