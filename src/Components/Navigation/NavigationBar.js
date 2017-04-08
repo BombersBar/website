@@ -8,7 +8,7 @@ function NavigationBar() {
     <ul className="navigationBar">
       <li>
         <Link to="/faq">
-          Faq
+          FAQ
         </Link>
       </li>
       <li>
