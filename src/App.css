@@ -13,3 +13,18 @@
   color: white;
   text-decoration: none;
 }
+
+.bblogo{
+	height: 5rem;
+	width: 5rem;
+	display: inline;
+}
+
+.bbName{
+	margin-left: 2rem;
+	display: inline;
+}
+
+.logoName{
+	float: left;
+}

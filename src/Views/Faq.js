@@ -1,4 +1,5 @@
 import React from 'react';
+import "./Faq.css";
 
 // This the faq data, it is mapped to HTML elements below!
 // The reason for this as an array is that we can extract into a rest call later down the line, if we introduce a server
@@ -64,10 +65,11 @@ const faqData = [
 function FaqView() {
   return (
     <div>
+    <h1>FAQ</h1>
       { faqData.map((item, index) => (
-        <div key={index}>
-          <h2>{item.header}</h2>
-          <p>{item.body}</p>
+        <div className="faqData" key={index}>
+          <h3 className="faqHeader"><strong>{item.header}</strong></h3>
+          <p className="faqBody"><strong>{item.body}</strong></p>
         </div>
       )) }
     </div>

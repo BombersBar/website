@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import App from './App';
 import IndexView from './Views/Index';
+import Obombercare from './Views/Obombercare';
 import MustWatchView from './Views/MustWatch';
 import FaqView from './Views/Faq';
 import FittingsView from './Views/Fittings';
@@ -17,6 +18,7 @@ ReactDOM.render((
         <Route path="/must-watch" component={MustWatchView} />
         <Route path="/faq" component={FaqView} />
         <Route path="/fittings" component={FittingsView} />
+        <Route path="/obombercare" component={Obombercare} />
       </App>
     </Router>
   ),

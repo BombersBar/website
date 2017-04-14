@@ -1,0 +1,15 @@
+.faqHeader{
+	text-align: left;
+	margin-bottom: .2rem;
+}
+
+.faqBody{
+	font-size: 13px;
+}
+
+.faqData{
+	width:80%;
+	padding-left: 10%;
+	padding-right: 10%;
+	margin-bottom: 3rem;
+}
