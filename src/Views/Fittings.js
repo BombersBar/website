@@ -33,11 +33,12 @@ function FittingsView() {
         <div key={ship.name}>
           <h2>{ship.name}</h2>
           { ship.fittings.map(fitting => (
-            <div key={fitting.id} 
+            <div key={fitting.id}
+            // eslint-disable-next-line
               className={fitting.title.replace(/\ /g, '-')}>
 
               <h3>{fitting.title}</h3>
-              
+
               <OsmiumFittingWidget fitting={fitting} />
             </div>
           )) }
