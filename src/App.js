@@ -11,12 +11,6 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <h2>
-            <Link className="logoName" to="/">
-              <img className="bblogo" src={require('../public/bombersbarlogo.jpg')}/>
-              <span className="bbName">Bombers Bar</span>
-            </Link>
-          </h2>
           <NavigationBar />
         </div>
         {this.props.children}

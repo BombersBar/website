@@ -3,28 +3,10 @@
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+  background-color: white;
+  height: 100px;
   color: white;
+  box-shadow: 0 0.15em 0.35em 0 rgba(0,0,0,0.135);
+  border-bottom:1px solid #ccc;
 }
 
-.App-header h2 a {
-  color: white;
-  text-decoration: none;
-}
-
-.bblogo{
-	height: 5rem;
-	width: 5rem;
-	display: inline;
-}
-
-.bbName{
-	margin-left: 2rem;
-	display: inline;
-}
-
-.logoName{
-	float: left;
-}

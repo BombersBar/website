@@ -64,7 +64,7 @@ const faqData = [
 
 function FaqView() {
   return (
-    <div>
+    <div className="faqContainer">
     <h1>FAQ</h1>
       { faqData.map((item, index) => (
         <div className="faqData" key={index}>

@@ -5,7 +5,14 @@ import './NavigationBar.css';
 
 function NavigationBar() {
   return (
-    <ul className="navigationBar">
+    <div className="navigationBar">
+      <h2>
+        <Link className="logoName" to="/">
+          <img className="bblogo" src={require('../../../public/bombersbarlogo.jpg')}/>
+          <span className="bbName">Bombers Bar</span>
+        </Link>
+      </h2>
+    <ul>
       <li>
         <Link to="/faq">
           Faq
@@ -22,6 +29,7 @@ function NavigationBar() {
         </Link>
       </li>
     </ul>
+    </div>
   );
 }
 
