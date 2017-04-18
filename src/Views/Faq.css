@@ -8,8 +8,22 @@
 }
 
 .faqData{
-	width:80%;
-	padding-left: 10%;
-	padding-right: 10%;
+	margin-left: 10%;
+	margin-right: 10%;
 	margin-bottom: 3rem;
+}
+
+.faqContainer{
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	padding-top:3rem;
+	margin-bottom: 3rem;
+	border-bottom:1px solid #ccc;
+	border-left:1px solid #ccc;
+  	border-right:1px solid #ccc;
+  	border-top:none;
+  	border-radius: 4px;
+
+	box-shadow: 0 0.15em 0.35em 0 rgba(0,0,0,0.135);
 }
