@@ -1,6 +1,7 @@
 .navigationBar{
-	margin-left: 50px;
-	margin-right: 50px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .navigationBar ul {

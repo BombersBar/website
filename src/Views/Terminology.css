@@ -1,19 +1,4 @@
-.faqHeader{
-	text-align: left;
-	margin-bottom: .2rem;
-}
-
-.faqBody{
-	font-size: 13px;
-}
-
-.faqData{
-	margin-left: 10%;
-	margin-right: 10%;
-	margin-bottom: 3rem;
-}
-
-.faqContainer{
+.terminologyContainer{
 	width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
@@ -26,4 +11,19 @@
   	border-radius: 4px;
 
 	box-shadow: 0 0.15em 0.35em 0 rgba(0,0,0,0.135);
+}
+
+.terminologyHeader{
+	text-align: left;
+	margin-bottom: .2rem;
+}
+
+.terminologyData{
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 3rem;
+}
+
+.subList{
+	margin-left: 10px;
 }

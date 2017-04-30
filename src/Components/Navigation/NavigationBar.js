@@ -28,6 +28,11 @@ function NavigationBar() {
           Fittings
         </Link>
       </li>
+      <li>
+        <Link to="/terminology">
+          Terminology
+        </Link>
+      </li>
     </ul>
     </div>
   );
