@@ -1,21 +1,37 @@
-.homepageButtonContainer{
-  width: 80%;
+.homepageContainer{
   margin-top: 3rem;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-bottom: 3rem;
+  font-size: 16px;
 }
 
-.homepageButtonContainer p{
+.homepageButtonContainer h1{
+  font-weight: 400;
+}
+
+.homepageButtonContainer{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+}
+
+h1, h2{
+  font-weight: 400;
+}
+
+.homepageTitle{
   text-align: center;
 }
 
 .homepageButtonContainer-button{
-  width: 33%;
-  display: inline;
+  min-width: 20%;
+  display: inline-block;
   margin-left: 1rem;
+  margin-top: 2rem;
   text-decoration: none;
   line-height:1.2;
 }
+
 
 .homepageButtonContainer-button a{
   border-style: solid;
@@ -31,3 +47,84 @@
   background-color : rgb(196, 18, 30);
   color: rgb(255, 255, 255);
 }
+
+.homepageButtonContainer-button a:hover{
+  background-color: red;
+  border-color: red;
+}
+
+.table{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tableList h3{
+  margin-top: 0;
+  color:hsl(356, 83%, 42%);
+  letter-spacing: -0.042em;
+  font-weight: 400;
+}
+
+.tableContents{
+  text-align: left;
+}
+.tableList{
+  list-style: none;
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+ul.tableList li {
+  position:relative;
+  margin-bottom: 0;
+  padding-bottom: 1em;
+}
+
+ul.tableList li:after {
+  content: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/RedDisc.svg/20px-RedDisc.svg.png');
+  position: absolute;
+  left: -26px;
+  top: 0px;
+}
+
+ul.tableList li:before {
+  content:"";
+  position: absolute;
+  left: -16px;
+  border-left: 1px dotted black;
+  height: 100%;
+  width: 1px;
+}
+
+ul.tableList li:first-child:before {
+  top: 6px;
+}
+
+ul.tableList li:last-child:before {
+  height: 5px;
+}
+
+.howToJoinOuter{
+  background-color: #f8f8f8;
+}
+
+.howToJoinInner{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 15px;
+  padding-left: 15px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  color: hsl(356, 83%, 42%);
+}
+
+.howToJoinContents{
+  color:black;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+

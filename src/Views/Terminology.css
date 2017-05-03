@@ -1,4 +1,4 @@
-.OutsideContainer{
+.terminologyContainer{
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -12,18 +12,17 @@
   box-shadow: 0 0.15em 0.35em 0 rgba(0,0,0,0.135);
 }
 
-.iskIcon{
-  color: white;
-}
-
-.titleObombercare{
-  color: hsl(0, 100%, 50%);
-}
-
-.InsideContainer{
-  margin: 5%
-}
-
-li,p{
+.terminologyHeader{
   text-align: left;
+  margin-bottom: .2rem;
+}
+
+.terminologyData{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 3rem;
+}
+
+.subList{
+  margin-left: 10px;
 }

@@ -8,6 +8,8 @@ import Obombercare from './Views/Obombercare';
 import MustWatchView from './Views/MustWatch';
 import FaqView from './Views/Faq';
 import FittingsView from './Views/Fittings';
+import Terminology from './Views/Terminology';
+
 
 import './index.css';
 
@@ -19,6 +21,7 @@ ReactDOM.render((
         <Route path="/faq" component={FaqView} />
         <Route path="/fittings" component={FittingsView} />
         <Route path="/obombercare" component={Obombercare} />
+        <Route path="/terminology" component={Terminology} />
       </App>
     </Router>
   ),
