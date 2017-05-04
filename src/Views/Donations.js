@@ -1,9 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-<<<<<<< HEAD
 import Donation from '../Components/Donations/donation'
-=======
->>>>>>> Started donations
 import "./Donation.css";
 
 
