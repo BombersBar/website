@@ -8,7 +8,7 @@ function NavigationBar() {
     <div className="navigationBar">
       <h2>
         <Link className="logoName" to="/">
-          <img className="bblogo" src={require('../../../public/bombersbarlogo.jpg')}/>
+          <img className="bblogo" src={require('../../../public/bombersbarlogo.jpg')} alt=''/>
           <span className="bbName">Bombers Bar</span>
         </Link>
       </h2>

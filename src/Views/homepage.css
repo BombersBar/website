@@ -8,11 +8,25 @@
   font-weight: 400;
 }
 
+.donationsSeeMore{
+  color:hsl(356, 83%, 42%);
+  letter-spacing: -0.042em;
+  font-weight: 400;
+}
+
+.donationsSeeMore a{
+ text-decoration: none;
+}
+
 .homepageButtonContainer{
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5rem;
+}
+
+.bottomSpacing{
+  margin-bottom: 1rem;
 }
 
 h1, h2{
@@ -125,6 +139,11 @@ ul.tableList li:last-child:before {
   color:black;
   padding-right: 15px;
   padding-left: 15px;
+}
+
+
+.doctrineTitle{
+  padding: 0px;
 }
 
 

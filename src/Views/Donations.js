@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import Donation from '../Components/Donations/donation'
 import "./Donation.css";
 
 
@@ -9,37 +10,67 @@ export default class Donations extends React.Component {
 
     this.state = {
       donationsTop: [],
-      donations: []
+      donationsTopEver: [],
+      topDonationLastMonth:[]
     };
   }
 
   componentDidMount() {
-    axios.get('https://n1b.ch/api/donations/top')
-      .then(res => {
-        const donationsTop = res.data.map((obj) => obj) || [];
-        this.setState({ donationsTop });
-      });
-      axios.get('https://n1b.ch/api/donations')
-      .then(res => {
-        const donations= res.data.map(obj => obj) || [];
-        this.setState({ donations });
-      });
+    axios.get('https://n1b.ch/api/donations/top',{
+                params: {
+                  offset:1
+                }
+            })
+            .then(res => {
+                const donationsTop = res.data.map((obj) => obj) || [];
+                this.setState({ donationsTop });
+            });
+
+    axios.get('https://n1b.ch/api/donations/top',{
+                params: {
+                    limit: 1
+                }
+            })
+            .then(res => {
+                const donationsTopEver = res.data.map(obj => obj) || [];
+                this.setState({ donationsTopEver });
+            });
+      axios.get('https://n1b.ch/api/donations/top',{
+                params: {
+                    days: 7,
+                    limit: 5
+                }
+            })
+            .then(res => {
+                const topDonationLastMonth= res.data.map(obj => obj) || [];
+                this.setState({ topDonationLastMonth});
+            });
   }
 
   render() {
-    const{ donations, donationsTop}=this.state
+    const{ donationsTop, donationsTopEver, topDonationLastMonth}=this.state;
+
 
     return (
     <div className="donationContainer">
-    <h1>Donations</h1>
-      { donationsTop.map((item, index) => (
-        <div className="donation" key={index}>
-          {/* number after character id is for the size of the image*/}
-          <img className="bblogo" src={'https://image.eveonline.com/Character/'+item.characterId+"_200.jpg"}/>
-          <h3 className="name"><strong>{item.characterName}</strong></h3>
-          <p className="amount"><strong>{item.amount}</strong></p>
-        </div>
-      )) }
+      <h1>Largest Donation Ever Recieved</h1>
+            { donationsTopEver.map((item, index) => (
+              <Donation item={item} key={index}  />
+          )) }
+
+        <h1>Top Donations of all Time</h1>
+          { donationsTop.map((item, index) => (
+            <div style={{  display: 'inline-block'}}>
+            {!(index === 0) &&
+             <Donation item={item} key={index} />
+            }
+            </div>
+          )) }
+
+           <h1>Top Donations Over the Last Month</h1>
+          { topDonationLastMonth.map((item, index) => (
+             <Donation item={item} key={index} />
+          )) }
     </div>
     );
   }
