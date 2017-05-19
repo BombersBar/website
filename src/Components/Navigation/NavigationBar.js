@@ -15,7 +15,7 @@ function NavigationBar() {
     <ul>
       <li>
         <Link to="/faq">
-          Faq
+          FAQ
         </Link>
       </li>
       <li>

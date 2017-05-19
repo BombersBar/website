@@ -12,7 +12,8 @@ export default class Homepage extends React.Component {
     super(props);
 
     this.state = {
-      topDonationLastWeek:[]
+      topDonationLastWeek:[],
+      topDonationLastMonth:[]
     };
   }
 
@@ -27,9 +28,19 @@ export default class Homepage extends React.Component {
                 const topDonationLastWeek=res.data.map(obj => obj) || [];
                 this.setState({ topDonationLastWeek});
             });
+      axios.get('https://n1b.ch/api/donations/top',{
+                params: {
+                    days: 30,
+                    limit: 5
+                }
+            })
+            .then(res => {
+                const topDonationLastMonth=res.data.map(obj => obj) || [];
+                this.setState({ topDonationLastMonth});
+            });
   }
   render(){
-        const{topDonationLastWeek}=this.state;
+        const{topDonationLastWeek, topDonationLastMonth}=this.state;
 
   return (
     <div className="homepageContainer">
@@ -60,11 +71,24 @@ export default class Homepage extends React.Component {
 	      	</Link>
       	</div>
       </div>
-
-      <h1>Top Donations Over the Last Week</h1>
-          { topDonationLastWeek.map((item, index) => (
-             <Donation item={item} key={index} />
-      ))}
+      {topDonationLastWeek.length > 0 ?
+        <div>
+          <h1>Top Donations Over the Last Week</h1>
+            <div>
+                { topDonationLastWeek.map((item, index) => (
+                   <Donation item={item} key={index} />
+            ))}
+            </div>
+        </div>:
+        <div>
+           <h1>Top Donations Over the Last Month</h1>
+          <div>
+              { topDonationLastMonth.map((item, index) => (
+                 <Donation item={item} key={index} />
+          ))}
+          </div>
+        </div>
+      }
       <span className="bottomSpacing">
         <h3 className="donationsSee">Want to see more <Link to="/donations">Donations?</Link></h3>
       </span>
