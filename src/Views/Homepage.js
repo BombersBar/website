@@ -91,6 +91,10 @@ export default class Homepage extends React.Component {
       }
       <span className="bottomSpacing">
         <h3 className="donationsSee">Want to see more <Link to="/donations">Donations?</Link></h3>
+
+        <h1> How to donate?</h1>
+        <h4> Go to bombers bar channel right click "The Bombers Bar" and click give money </h4>
+        <img src={require('../../public/donation.png')} alt=''/>
       </span>
       <h1>Why Join Bombers Bar?</h1>
       <table className="table">
