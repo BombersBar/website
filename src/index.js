@@ -10,6 +10,7 @@ import FaqView from './Views/Faq';
 import FittingsView from './Views/Fittings';
 import Terminology from './Views/Terminology';
 import Donations from './Views/Donations';
+import Motd from './Views/Motd';
 
 
 
@@ -25,6 +26,7 @@ ReactDOM.render((
         <Route path="/obombercare" component={Obombercare} />
         <Route path="/terminology" component={Terminology} />
         <Route path="/donations" component={Donations} />
+        <Route path="/motd" component={Motd} />
       </App>
     </Router>
   ),
