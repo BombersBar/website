@@ -13,6 +13,11 @@ function NavigationBar() {
         </Link>
       </h2>
     <ul>
+     <li>
+        <Link to="/motd">
+          MOTD
+        </Link>
+      </li>
       <li>
         <Link to="/faq">
           FAQ

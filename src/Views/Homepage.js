@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import Donation from '../Components/Donations/donation'
+import Victim from '../Components/kills/Victim'
 
 import { Link } from 'react-router-dom';
 
@@ -13,7 +14,8 @@ export default class Homepage extends React.Component {
 
     this.state = {
       topDonationLastWeek:[],
-      topDonationLastMonth:[]
+      topDonationLastMonth:[],
+      kills:[]
     };
   }
 
@@ -38,16 +40,25 @@ export default class Homepage extends React.Component {
                 const topDonationLastMonth=res.data.map(obj => obj) || [];
                 this.setState({ topDonationLastMonth});
             });
+      axios.get('https://n1b.ch/api/motd/kills')
+            .then(res => {
+                const kills = res.data || [];
+                this.setState({ kills });
+            });
   }
   render(){
-        const{topDonationLastWeek, topDonationLastMonth}=this.state;
+    const{topDonationLastWeek, topDonationLastMonth,kills}=this.state;
+
+    kills.sort(function(a, b) {
+    return parseFloat(b.totalValue) - parseFloat(a.totalValue);
+    });
 
   return (
     <div className="homepageContainer">
     	<div>
       	<h1>The NPSI Community For Cloakies</h1>
       	<p className="homepageTitle">The “Not Purple Shoot It” fleets allow cloaky enthusiasts from all over New Eden to come together in a fleet.
-              No corporations. No politics. Just explosions and Green Killboards.</p>
+              No corporations. No politics. Just pretty explosions and Green Killboards.</p>
       </div>
       <div className='homepageButtonContainer'>
       	<div className='homepageButtonContainer-button'>
@@ -96,6 +107,22 @@ export default class Homepage extends React.Component {
         <h4> Go to bombers bar channel right click "The Bombers Bar" and click give money </h4>
         <img src={require('../../public/donation.png')} alt=''/>
       </span>
+      <div>
+        <h1>Recent Victims</h1>
+        <h2> Highest Value Kills </h2>
+          { kills.map((kill,index) => (
+            <span>
+            {index < 2 &&
+              <Victim kill={kill} key={index}/>
+            }
+            </span>
+            ))
+          }
+      </div>
+      <span className="bottomSpacing">
+        <h3 className="donationsSee">Want to see more <Link to="/motd">Kills?</Link></h3>
+        <h4> Check the <Link to="/motd">MOTD</Link> to find out when the next fleet is so you can be on the next big killmail </h4>
+      </span>
       <h1>Reasons To Come Join Bombers Bar</h1>
       <table className="table">
         <tbody>
@@ -105,20 +132,25 @@ export default class Homepage extends React.Component {
                 <li>
                   <h3> WE ARE NEWBRO FRIENDLY</h3>
                   <p className="tableContents">
-                    It doesnt matter when you've started playing EVE. As soon as you can fly a cloaky ship you are welcome to join our fleets.
+                    It doesnt matter when you've started playing EVE.
+                    As soon as you can fly a cloaky ship you are welcome to join our fleets.
                     We will do our best to help you learn and feel free to ask any questions you may have.
                   </p>
                 </li>
                 <li>
-                  <h3>YOU CAN THRIVE AND FLOURISH</h3>
+                  <h3>YOU CAN LEARN NEW WAYS TO PLAY</h3>
                   <p className="tableContents">
-                    Becoming a BB regular gives you new ways to play EVE with other people who love cloaky flying. Be a part of an ever growing community, and also learn from some of the best players in EVE.
+                    Becoming a BB regular gives you new ways to play EVE with other people who love cloaky flying.
+                    Be a part of an ever growing community, and also learn from some of the best players in EVE.
                   </p>
                 </li>
                 <li>
-                  <h3>YOU HAVE ZERO COMMITMENT</h3>
+                  <h3>THIS IS NOT A CORP OR ALLIANCE!! </h3>
                   <p className="tableContents">
-                    You are never forced to do anything in Bombers Bar (other than cloaking up). All participation and most contribution is a fully volunteer basis. For fuel costs we do refund costs.
+                    Theres no corp or alliance to join you just have to X-up and come along.
+                    You are never forced to do anything in Bombers Bar (other than cloaking up).
+                    All participation and most contribution is a fully volunteer basis.
+                    For fuel costs and some other fleet necessities we do refund costs.
                     Come Fly with us whenever you feel like!
                   </p>
                 </li>
@@ -131,22 +163,25 @@ export default class Homepage extends React.Component {
               <li>
                 <h3>WE HAVE NO POLITICS AND NO DRAMA</h3>
                 <p className="tableContents">
-                  One of the only permanent rules in Bombers Bar. Theres no corp or alliance to join you just have to X-up and come along.
+                  One of the only permanent rules in Bombers Bar.
                   We want to provide an impartial environment as much as possible this is key to bringing people together from all different backgrounds.
                   Fly with who you want to and who you enjoy flying with!
                 </p>
               </li>
               <li>
-                <h3>WE ARE INCLUSIVE</h3>
+                <h3>WE ARE OPEN TO ALL OF NEW EDEN</h3>
                 <p className="tableContents">
-                  You don’t have to be an FC to go on a roam with some fellow Bombers. Just send a message on the in game chat channel or slack.
-                  To blow some up together all you need is to take initiative and fly together. Or you could always join the FC team ,new Junior FCs are always welcome
+                  You don’t have to be an FC to go on a roam with some fellow Bombers.
+                  Just send a message on the in game chat channel or slack.
+                  To blow some up together all you need is to take initiative and fly together.
+                  Or you could always join the FC team ,new Junior FCs are always welcome
                 </p>
               </li>
               <li>
-                <h3>IT CAN BE REWARDING</h3>
+                <h3>YOU COULD EARN ISK WHILE YOU PLAY</h3>
                 <p className="tableContents">
-                  Hunters and FCs receive a portion of loot in fleets. All the more incentive to take initiative and hunt/FC for Bombers Bar.
+                  Hunters and FCs receive a portion of loot in fleets.
+                  All the more incentive to take initiative and hunt/FC for Bombers Bar.
                   The rest of the loot goes to Bombers Bar and is used to fund O'bombercare aswell as our fuel/other fleet costs.
                 </p>
               </li>
@@ -164,7 +199,8 @@ export default class Homepage extends React.Component {
             <li>
               <h3>DIFFERENCES: ARMADA & WHALING</h3>
               <p className="tableContents">
-                Armada is staged out of a wormhole with a null sec static. This wormhole is rolled to get new regions and new targets.
+                Armada is staged out of a wormhole with a null sec static.
+                This wormhole is rolled to get new regions and new targets.
                 While normal Whaling the blops moves around null sec to try give range to get targets.
               </p>
             </li>
@@ -181,7 +217,7 @@ export default class Homepage extends React.Component {
               </p>
             </li>
             <li>
-              <h3>GOAL: HUNT AND KILL!</h3>
+              <h3>FLEET OBJECTIVE: HUNT AND KILL!</h3>
               <p className="tableContents">
                 Catch and kill as many high valued whales and seals as possible. Be careful about baits and counter-drops. Always be aligned and ready to warp off!
               </p>
@@ -205,7 +241,7 @@ export default class Homepage extends React.Component {
               </p>
             </li>
             <li>
-              <h3>GOAL: GUDFITES</h3>
+              <h3>FLEET OBJECTIVE: GUDFITES</h3>
               <p className="tableContents">
                 Camp gates or roam and look good doing it. Using a mixture of bombs and torps to destroy enemy fleets.
               </p>
@@ -231,9 +267,10 @@ export default class Homepage extends React.Component {
               </p>
             </li>
             <li>
-              <h3>GOAL: PURE WIPEOUT</h3>
+              <h3>FLEET OBJECTIVE: TOTAL DESTRUCTION</h3>
               <p className="tableContents">
-                Bombing runs are designed to eradicate entire fleets. Bombers Bar was founded on doing those and has excelled in their execution ever since.
+                Bombing runs are designed to eradicate entire fleets.
+                Bombers Bar was founded on doing those and has excelled in their execution ever since.
                 Nothing else in a game is as satisfactory as a successful bombing run!
               </p>
             </li>
@@ -254,7 +291,8 @@ export default class Homepage extends React.Component {
                   <td>
                     <h3> STEP 2</h3>
                     <p className="howToJoinContents">
-                      Check out time and date for the next fleet. Preannounced fleets are in the BB channel MOTD and will be announced on Slack. Rageform fleets which are announced on Slack and in game.
+                      Check out time and date for the next fleet. Fleets are in the BB channel MOTD and will be announced on Slack.
+                      Also checkout the <Link to="/motd">MOTD</Link> on this site which is pulled directly from in game.
                     </p>
                   </td>
                   <td>
@@ -266,7 +304,7 @@ export default class Homepage extends React.Component {
                 </tr>
               </tbody>
             </table>
-            <h4>Bombers Bar does not have a static staging system but it is recommended to have clones & ships ready in: Thera, Jita & Amarr.</h4>
+            <h4>Bombers Bar does not have a static staging system but it is recommended to have clones & ships ready in: Jita, Amarr aswell as other major trade hubs.</h4>
           </div>
         </div>
       </div>
