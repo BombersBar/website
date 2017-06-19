@@ -46,6 +46,10 @@ h1, h2{
   line-height:1.2;
 }
 
+.inline{
+  display: inline-block;
+}
+
 
 .homepageButtonContainer-button a{
   border-style: solid;
@@ -83,6 +87,23 @@ h1, h2{
 .tableContents{
   text-align: left;
 }
+.alignLeft{
+  float: left;
+  max-width: 50%;
+  margin-left: 5%;
+}
+
+.alignRight{
+  float: right;
+  max-width: 40%;
+  margin-right: 5%;
+}
+
+.fullSize{
+  margin-top: 1rem;
+  width:100%;
+}
+
 .tableList{
   list-style: none;
   max-width: 800px;

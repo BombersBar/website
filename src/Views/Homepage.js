@@ -23,7 +23,7 @@ export default class Homepage extends React.Component {
       axios.get('https://n1b.ch/api/donations/top',{
                 params: {
                     days: 7,
-                    limit: 5
+                    limit: 4
                 }
             })
             .then(res => {
@@ -33,7 +33,7 @@ export default class Homepage extends React.Component {
       axios.get('https://n1b.ch/api/donations/top',{
                 params: {
                     days: 30,
-                    limit: 5
+                    limit: 4
                 }
             })
             .then(res => {
@@ -82,47 +82,7 @@ export default class Homepage extends React.Component {
 	      	</Link>
       	</div>
       </div>
-      {topDonationLastWeek.length > 0 ?
-        <div>
-          <h1>Top Donations Over the Last Week</h1>
-            <div>
-                { topDonationLastWeek.map((item, index) => (
-                   <Donation item={item} key={index} />
-            ))}
-            </div>
-        </div>:
-        <div>
-           <h1>Top Donations Over the Last Month</h1>
-          <div>
-              { topDonationLastMonth.map((item, index) => (
-                 <Donation item={item} key={index} />
-          ))}
-          </div>
-        </div>
-      }
-      <span className="bottomSpacing">
-        <h3 className="donationsSee">Want to see more <Link to="/donations">Donations?</Link></h3>
 
-        <h1> How to donate?</h1>
-        <h4> Go to bombers bar channel right click "The Bombers Bar" and click give money </h4>
-        <img src={require('../../public/donation.png')} alt=''/>
-      </span>
-      <div>
-        <h1>Recent Victims</h1>
-        <h2> Highest Value Kills </h2>
-          { kills.map((kill,index) => (
-            <span>
-            {index < 2 &&
-              <Victim kill={kill} key={index}/>
-            }
-            </span>
-            ))
-          }
-      </div>
-      <span className="bottomSpacing">
-        <h3 className="donationsSee">Want to see more <Link to="/motd">Kills?</Link></h3>
-        <h4> Check the <Link to="/motd">MOTD</Link> to find out when the next fleet is so you can be on the next big killmail </h4>
-      </span>
       <h1>Reasons To Come Join Bombers Bar</h1>
       <table className="table">
         <tbody>
@@ -307,7 +267,52 @@ export default class Homepage extends React.Component {
             <h4>Bombers Bar does not have a static staging system but it is recommended to have clones & ships ready in: Jita, Amarr aswell as other major trade hubs.</h4>
           </div>
         </div>
+
+        <div className="inline">
+          <div className="alignLeft">
+          {topDonationLastWeek.length > 0 ?
+          <div>
+            <h1>Top Donations Over the Last Week</h1>
+              <div>
+                  { topDonationLastWeek.map((item, index) => (
+                     <Donation item={item} key={index} />
+              ))}
+              </div>
+          </div>:
+          <div>
+             <h1>Top Donations Over the Last Month</h1>
+            <div>
+                { topDonationLastMonth.map((item, index) => (
+                   <Donation item={item} key={index} />
+            ))}
+            </div>
+          </div>
+        }
+        </div>
+        <div className="alignRight">
+        <span className="bottomSpacing">
+          <h1> How to donate?</h1>
+          <h4> Go to bombers bar channel right click "The Bombers Bar" and click give money </h4>
+          <img src={require('../../public/donation.png')} alt=''/>
+          <h3 className="donationsSee">Want to see more <Link to="/donations">Donations?</Link></h3>
+        </span>
+        </div>
       </div>
+      <h1>Recent Victims</h1>
+        <h2> Highest Value Kills </h2>
+      </div>
+          { kills.map((kill,index) => (
+            <span>
+            {index < 2 &&
+              <Victim kill={kill} key={index}/>
+            }
+            </span>
+            ))
+          }
+          <span className="bottomSpacing">
+        <h3 className="donationsSee">Want to see more <Link to="/motd">Kills?</Link></h3>
+        <h4> Check the <Link to="/motd">MOTD</Link> to find out when the next fleet is so you can be on the next big killmail </h4>
+      </span>
     </div>
   )};
 }
