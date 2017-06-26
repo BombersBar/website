@@ -83,35 +83,49 @@ export default class Homepage extends React.Component {
       	</div>
       </div>
 
-      <h1>Reasons To Come Join Bombers Bar</h1>
+      <h1>Reasons To Join Bombers Bar Fleets</h1>
       <table className="table">
         <tbody>
           <td>
             <tr>
               <ul className="tableList">
                 <li>
-                  <h3> WE ARE NEWBRO FRIENDLY</h3>
+                  <h3> WE ARE VERY NEWBRO FRIENDLY</h3>
                   <p className="tableContents">
                     It doesnt matter when you've started playing EVE.
                     As soon as you can fly a cloaky ship you are welcome to join our fleets.
-                    We will do our best to help you learn and feel free to ask any questions you may have.
                   </p>
                 </li>
                 <li>
-                  <h3>YOU CAN LEARN NEW WAYS TO PLAY</h3>
+                  <h3>BROADEN YOUR HORIZONS</h3>
                   <p className="tableContents">
-                    Becoming a BB regular gives you new ways to play EVE with other people who love cloaky flying.
-                    Be a part of an ever growing community, and also learn from some of the best players in EVE.
+                    Get information about all different types of play from mining and incursions to the best fits for solo fights.
+                  </p>
+                </li>
+                <li>
+                  <h3>BE MORE THAN JUST AN F1 MONKEY!!</h3>
+                  <p className="tableContents">
+                      Take more responsibilty with sebo bombers to help recons or fly a recon or hunter yourself.
                   </p>
                 </li>
                 <li>
                   <h3>THIS IS NOT A CORP OR ALLIANCE!! </h3>
                   <p className="tableContents">
                     Theres no corp or alliance to join you just have to X-up and come along.
-                    You are never forced to do anything in Bombers Bar (other than cloaking up).
-                    All participation and most contribution is a fully volunteer basis.
-                    For fuel costs and some other fleet necessities we do refund costs.
-                    Come Fly with us whenever you feel like!
+                  </p>
+                </li>
+                <li>
+                  <h3>BLOW UP SHIT!!</h3>
+                  <p className="tableContents">
+                    Easy access to PVP and dank green killboards.
+                  </p>
+                </li>
+                <li>
+                  <h3>OBOMBERCARE</h3>
+                  <p className="tableContents">
+                   (sometimes referred to as SRP or Trumpedo care) <br/>
+                    Dont be afraid about losing your ship we will give you isk to completely or atleast partially for lose.
+                    (If your flying bomber/recon/hunter others bring at your own risk)
                   </p>
                 </li>
               </ul>
@@ -124,27 +138,40 @@ export default class Homepage extends React.Component {
                 <h3>WE HAVE NO POLITICS AND NO DRAMA</h3>
                 <p className="tableContents">
                   One of the only permanent rules in Bombers Bar.
-                  We want to provide an impartial environment as much as possible this is key to bringing people together from all different backgrounds.
                   Fly with who you want to and who you enjoy flying with!
                 </p>
               </li>
               <li>
-                <h3>WE ARE OPEN TO ALL OF NEW EDEN</h3>
+                <h3>NETWORKING / MAKING FRIENDS</h3>
                 <p className="tableContents">
-                  You don’t have to be an FC to go on a roam with some fellow Bombers.
-                  Just send a message on the in game chat channel or slack.
-                  To blow some up together all you need is to take initiative and fly together.
-                  Or you could always join the FC team ,new Junior FCs are always welcome
+                  Meet people from all over EVE and build connections beyond your alliance/corp boundries
+                  Your always welcome on bb comms to chill , ask questions, try get csm votes or to try start your own roam.
+                </p>
+              </li>
+              <li>
+                <h3>BE JUST AN F1 MONKEY!!</h3>
+                <p className="tableContents">
+                    SCREW RESPONSIBILITY. JUST ALIGN OUT, HIT F1, WATCH EXPLOSIONS, GG
                 </p>
               </li>
               <li>
                 <h3>YOU COULD EARN ISK WHILE YOU PLAY</h3>
                 <p className="tableContents">
                   Hunters and FCs receive a portion of loot in fleets.
-                  All the more incentive to take initiative and hunt/FC for Bombers Bar.
-                  The rest of the loot goes to Bombers Bar and is used to fund O'bombercare aswell as our fuel/other fleet costs.
                 </p>
               </li>
+              <li>
+                  <h3>HAVE FUN!!</h3>
+                  <p className="tableContents">
+                    Come along and watch netflix while you wait or join in chatting do whatever will let you have fun.
+                  </p>
+                </li>
+                <li>
+                  <h3>BE LURED IN BY FALSE ADVERTISEMENT!</h3>
+                  <p className="tableContents">
+                    wait... what?
+                  </p>
+                </li>
             </ul>
           </tr>
         </td>

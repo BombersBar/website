@@ -79,6 +79,7 @@ h1, h2{
 
 .tableList h3{
   margin-top: 0;
+  margin-bottom: 5px;
   color:hsl(356, 83%, 42%);
   letter-spacing: -0.042em;
   font-weight: 400;
@@ -86,6 +87,7 @@ h1, h2{
 
 .tableContents{
   text-align: left;
+  margin-top: 5px;
 }
 .alignLeft{
   float: left;
