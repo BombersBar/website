@@ -105,7 +105,7 @@ export default class Homepage extends React.Component {
                 <li>
                   <h3>BE MORE THAN JUST AN F1 MONKEY!!</h3>
                   <p className="tableContents">
-                      Take more responsibilty with sebo bombers to help recons or fly a recon or hunter yourself.
+                      Take more responsibilty and be tackle, DPS and E-war all in one ship whilst having no tank. Or fly a recon.
                   </p>
                 </li>
                 <li>
@@ -124,7 +124,7 @@ export default class Homepage extends React.Component {
                   <h3>OBOMBERCARE</h3>
                   <p className="tableContents">
                    (sometimes referred to as SRP or Trumpedo care) <br/>
-                    Dont be afraid about losing your ship we will give you isk to completely or atleast partially for lose.
+                    Dont be afraid about losing your ship we will give you isk to completely or atleast partially for loss.
                     (If your flying bomber/recon/hunter others bring at your own risk)
                   </p>
                 </li>
@@ -145,7 +145,7 @@ export default class Homepage extends React.Component {
                 <h3>NETWORKING / MAKING FRIENDS</h3>
                 <p className="tableContents">
                   Meet people from all over EVE and build connections beyond your alliance/corp boundries
-                  Your always welcome on bb comms to chill , ask questions, try get csm votes or to try start your own roam.
+                  You're always welcome on bb comms to chill , ask questions, try get csm votes or to try start your own roam.
                 </p>
               </li>
               <li>
@@ -163,7 +163,7 @@ export default class Homepage extends React.Component {
               <li>
                   <h3>HAVE FUN!!</h3>
                   <p className="tableContents">
-                    Come along and watch netflix while you wait or join in chatting do whatever will let you have fun.
+                    Come along and watch netflix while you wait or join in the chatting. Do whatever will let you have fun!.
                   </p>
                 </li>
                 <li>
