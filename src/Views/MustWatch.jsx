@@ -37,8 +37,8 @@ export default class MustWatchView extends React.Component {
       swipe: true,
       infinite: true,
       speed: 500,
-      slidesToShow: 3,
-      slidesToScroll: 3,
+      slidesToShow: 2,
+      slidesToScroll: 2,
       initialSlide: 0,
       responsive: [{
         breakpoint: 1700,
