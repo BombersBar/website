@@ -6,7 +6,7 @@ import 'slick-carousel/slick/slick.css';
 import YoutubeEmbeddedVideo from '../Components/Youtube/YoutubeEmbeddedVideo';
 import './MustWatch.css';
 
-const mustWatchData = [
+const newBroData = [
   {
     header: 'PRE-FLEET RULES AND INSTRUCTIONS',
     youtubeId: 'whw4B4AFwRA',
@@ -26,6 +26,37 @@ const mustWatchData = [
   {
     header: 'HOW TO WARP OFF AFTER BOMBING',
     youtubeId: 'PYdwWx1Zr8I',
+  },
+];
+
+const bomberGandaData = [
+  {
+    header: '80 Bombers Melt a Rorqual',
+    youtubeId: 'xrVEekw5lg8',
+  },
+  {
+    header: 'Hunter Training',
+    youtubeId: 'mCLWEA_15Z8',
+  },
+  {
+    header: 'Recon Training',
+    youtubeId: 'D5jkmquoQJA',
+  },
+  {
+    header: 'RIP NYX',
+    youtubeId: 'yzAJbGoV1jE',
+  },
+  {
+    header: 'Kill a Thanny, kill a NYX and steal the Rorqual!!',
+    youtubeId: 'aP8NVzZ_xCM',
+  },
+  {
+    header: 'Bombing a Fortizar Battle',
+    youtubeId: 'vC2tpPY_cL8',
+  },
+  {
+    header: 'Tempelman "Rolled"',
+    youtubeId: 'L78YSUBhXwE',
   },
 ];
 
@@ -59,15 +90,28 @@ export default class MustWatchView extends React.Component {
     };
     return (
       <div className='MustWatchContainer'>
-        <h2>NewBro Videos</h2>
-        <Slider {...settings}>
-          { mustWatchData.map((data, index) => (
-            <div key={index}>
-              <h2>{data.header}</h2>
-              <YoutubeEmbeddedVideo videoId={data.youtubeId} />
-            </div>
-           )) }
-        </Slider>
+        <div className='NewBroVideos'>
+          <h2>NewBro Videos</h2>
+          <Slider {...settings}>
+            { newBroData.map((data, index) => (
+              <div key={index}>
+                <h2>{data.header}</h2>
+                <YoutubeEmbeddedVideo videoId={data.youtubeId} />
+              </div>
+             )) }
+          </Slider>
+        </div>
+        <div className='BomberGandaVideos'>
+          <h2>BomberGanda Videos</h2>
+          <Slider {...settings}>
+            { bomberGandaData.map((data, index) => (
+              <div key={index}>
+                <h2>{data.header}</h2>
+                <YoutubeEmbeddedVideo videoId={data.youtubeId} />
+              </div>
+             )) }
+          </Slider>
+        </div>
       </div>
     );
   }

@@ -17,6 +17,10 @@
   color: red;
 }
 
+.NewBroVideos{
+  margin-bottom: 5rem;
+}
+
 @media only screen and (max-width: 767px) {
     .gallery {
         margin: 0 10%;
