@@ -1,0 +1,26 @@
+.MustWatchContainer{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+    display: flexbox;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.slick-dots li button:before {
+  color: red;
+}
+
+.slick-dots li.slick-active button:before{
+  color: red;
+}
+
+@media only screen and (max-width: 767px) {
+    .gallery {
+        margin: 0 10%;
+    }
+}

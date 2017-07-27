@@ -4,6 +4,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
 import YoutubeEmbeddedVideo from '../Components/Youtube/YoutubeEmbeddedVideo';
+import './MustWatch.css';
 
 const mustWatchData = [
   {
@@ -32,7 +33,8 @@ export default class MustWatchView extends React.Component {
   render() {
     const settings = {
       dots: true,
-      infinite: false,
+      arrows: false,
+      infinite: true,
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 3,
@@ -55,7 +57,7 @@ export default class MustWatchView extends React.Component {
       }],
     };
     return (
-      <div>
+      <div className='MustWatchContainer'>
         <h2>NEWBRO Videos</h2>
         <Slider {...settings}>
           { mustWatchData.map((data, index) => (
