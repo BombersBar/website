@@ -59,7 +59,7 @@ export default class MustWatchView extends React.Component {
     };
     return (
       <div className='MustWatchContainer'>
-        <h2>NeWbRO Videos</h2>
+        <h2>NewBro Videos</h2>
         <Slider {...settings}>
           { mustWatchData.map((data, index) => (
             <div key={index}>
