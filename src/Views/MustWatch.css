@@ -3,13 +3,11 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5rem;
-    display: flexbox;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
 }
 
-
+.slick-prev:before, .slick-next:before {
+    color:red !important;
+}
 
 .slick-dots li button:before {
   color: red;

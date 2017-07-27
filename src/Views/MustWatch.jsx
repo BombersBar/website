@@ -33,7 +33,8 @@ export default class MustWatchView extends React.Component {
   render() {
     const settings = {
       dots: true,
-      arrows: false,
+      arrows: true,
+      swipe: true,
       infinite: true,
       speed: 500,
       slidesToShow: 3,
@@ -53,6 +54,7 @@ export default class MustWatchView extends React.Component {
           slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 2,
+          arrows: false,
         },
       }],
     };
