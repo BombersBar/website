@@ -1,7 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 import "./Motd.css";
-import Victim from '../Components/kills/Victim'
+import Victim from '../Components/kills/Victim';
+import config from '../config';
 
 export default class Motd extends React.Component {
   constructor(props) {
@@ -14,13 +15,13 @@ export default class Motd extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('https://n1b.ch/api/motd/text')
+    axios.get(config.apiUrl + '/motd/text')
             .then(res => {
                 const motd = res.data || [];
                 this.setState({ motd });
             });
 
-    axios.get('https://n1b.ch/api/motd/kills')
+    axios.get(config.apiUrl + '/motd/kills')
             .then(res => {
                 const kills = res.data || [];
                 this.setState({ kills });

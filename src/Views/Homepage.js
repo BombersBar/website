@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import Donation from '../Components/Donations/donation'
 import Victim from '../Components/kills/Victim'
-
+import config from '../config';
 import { Link } from 'react-router-dom';
 
 import './homepage.css';
@@ -40,7 +40,7 @@ export default class Homepage extends React.Component {
                 const topDonationLastMonth=res.data.map(obj => obj) || [];
                 this.setState({ topDonationLastMonth});
             });
-      axios.get('https://n1b.ch/api/motd/kills')
+      axios.get(config.apiUrl + '/motd/kills')
             .then(res => {
                 const kills = res.data || [];
                 this.setState({ kills });
@@ -55,9 +55,9 @@ export default class Homepage extends React.Component {
 
   return (
     <div className="homepageContainer">
-    	<div>
-      	<h1>The NPSI Community For Cloakies</h1>
-      	<p className="homepageTitle">The “Not Purple Shoot It” fleets allow cloaky enthusiasts from all over New Eden to come together in a fleet.
+      <div>
+        <h1>The NPSI Community For Cloakies</h1>
+        <p className="homepageTitle">The “Not Purple Shoot It” fleets allow cloaky enthusiasts from all over New Eden to come together in a fleet.
               No corporations. No politics. Just pretty explosions and Green Killboards.</p>
       </div>
       <div className='homepageButtonContainer'>
