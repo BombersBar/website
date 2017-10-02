@@ -1,3 +1,3 @@
 module.exports = {
-  apiUrl: 'https://bombersbar-api.herokuapp.com',
+  apiUrl: 'https://n1b.ch/api',
 };
