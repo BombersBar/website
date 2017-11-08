@@ -38,23 +38,23 @@ export default class Motd extends React.Component {
             <h1>Message Of The Day</h1>
             <h2> From ingame BB channel </h2>
 
-              { motd.map((line,index) => (
-                  <div key={index}>
-                    <p className="motdLine"><strong>{line}</strong></p>
-                  </div>
-                  ))
-              }
-            </div>
+            { motd.map((line, index) => (
+              <div key={index}>
+                <p className="motdLine"><strong>{line}</strong></p>
+              </div>
+              ))
+            }
+          </div>
+          {kills.length > 0 &&
             <div>
-
-            <h1>Recent Victims</h1>
-            <h2> From ingame BB channel </h2>
-
-              { kills.map((kill,index) => (
-                  <Victim kill={kill} key={index}/>
-                ))
+              <h1>Recent Victims</h1>
+              <h2> From ingame BB channel </h2>
+              { kills.map((kill, index) => (
+                <Victim kill={kill} key={index} />
+              ))
               }
             </div>
+          }
         </div>
       </div>
     );

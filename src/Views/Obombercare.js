@@ -7,7 +7,7 @@ function ObombercareView() {
       <img className="iskIcon" src={require('../../public/u01B5.png')} alt=''/>
       <div className="InsideContainer">
         <span className="titleObombercare">ENJOY O'BOMBERCARE!</span>
-        <p className="titleObombercare">Search “Chaos Amphal” in game, read the instructions below or in her bio, and send her the killmail accordingly.</p>
+        <p className="titleObombercare">Search “Vova Nalentis” in game, read the instructions below or in her bio, and send her the killmail accordingly.</p>
 
         <p>To handle your payout, I need to have:</p>
         <ul>
