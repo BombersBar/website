@@ -8,6 +8,10 @@ import './MustWatch.css';
 
 const newBroData = [
   {
+    header: 'Fleet Training',
+    youtubeId: 'EHhOhUhEOAU',
+  },
+  {
     header: 'PRE-FLEET RULES AND INSTRUCTIONS',
     youtubeId: 'whw4B4AFwRA',
   },

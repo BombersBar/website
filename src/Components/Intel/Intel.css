@@ -1,0 +1,39 @@
+.infoBox{
+  height:70px;
+  max-width:1200px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  box-shadow: 0 0.15em 0.35em 0 rgba(0,0,0,0.135);
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FF4136 ;
+  color:#fff;
+}
+.infoBoxText strong{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.infoBoxText{
+  width: 100%;
+    display:flex;
+  justify-content: center;
+
+    align-items: center;
+
+}
+.infoBox .infoBoxText img{
+  width: 25px;
+  height: 25px;
+}
+.infoBox a{
+      text-decoration: none;
+      color:#001f3f;
+      font-weight: bold;
+}
