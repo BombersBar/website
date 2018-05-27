@@ -60,7 +60,7 @@ export default class Homepage extends React.Component {
         </div>
         <div className='homepageButtonContainer'>
           <div className='homepageButtonContainer-button'>
-            <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/document/d/1Lgcex_yERG14VTJTahP6_vksZFbIC7oj8nOm9Vqci0o/edit" type="button">
+            <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/document/d/1oflOpjiExiI-i-TbBLYpGMpJeUi56ZqvX8JtnbEJl4w/edit" type="button">
               Join Slack
             </a>
           </div>
