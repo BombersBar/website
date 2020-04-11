@@ -18,7 +18,7 @@ export default class Victim extends React.Component {
               <p className="details">{kill.ship} </p>
               <p  className="details">{formatIskAmount(kill.totalValue)}</p>
               <p className="details">
-                <a target="_blank" href={"https://zkillboard.com/kill/"+kill.killID} type="button">
+                <a target="_blank" rel="noopener noreferrer" href={"https://zkillboard.com/kill/"+kill.killID} type="button">
                   zKill
                 </a>
               </p>

@@ -37,39 +37,12 @@ h1, h2{
   text-align: center;
 }
 
-.homepageButtonContainer-button{
-  min-width: 20%;
-  display: inline-block;
-  margin-left: 1rem;
-  margin-top: 2rem;
-  text-decoration: none;
-  line-height:1.2;
-}
 
 .inline{
   display: inline-block;
 }
 
 
-.homepageButtonContainer-button a{
-  border-style: solid;
-  width: 100%;
-  border-width : 1px 1px 1px 1px;
-  text-decoration : none;
-  font-size:16px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  border-color : rgb(196, 18, 30);
-  background-color : rgb(196, 18, 30);
-  color: rgb(255, 255, 255);
-}
-
-.homepageButtonContainer-button a:hover{
-  background-color: red;
-  border-color: red;
-}
 
 .table{
   max-width: 1200px;
@@ -167,6 +140,79 @@ ul.tableList li:last-child:before {
 
 .doctrineTitle{
   padding: 0px;
+}
+
+
+#grid{
+  display:grid;
+  height:200px;
+  width:67vw;
+  grid-template-columns: auto auto auto auto auto;
+  /*background:red;*/
+}
+#wrapper{
+  display: flex;
+  flex-direction: column;  /* make main axis vertical */
+  justify-content: center; /* center items vertically, in this case */
+  align-items: center;   
+  height:51vh;
+}
+
+
+.homepageButtonContainer-button .name{
+  color:#fff;
+  font-weight: bold;
+}
+.homepageButtonContainer-button h3{
+ /* margin-top: -38px;*/
+}
+
+#wrapper a:hover .homepageButtonContainer-button {
+  background: -webkit-linear-gradient(to right, #485563, #29323c); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #485563, #29323c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+ */
+}
+
+
+#wrapper a{
+  text-decoration: none !important;
+}
+.homepageButtonContainer-button {
+  display:flex;
+  height:250px;
+  width:15vw;
+  /*margin:10px;*/
+  background: #485563; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FF4136, #c4121e); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FF4136, #c4121e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+ */
+  border-radius:5px;
+  flex-direction: column;  /* make main axis vertical */
+  justify-content: center; /* center items vertically, in this case */
+  align-items: center;
+  opacity:0.9;
+box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+}
+#care{
+  background:url(https://imageserver.eveonline.com/Type/2048_64.png);
+}
+#fittings{
+  background:url(https://web.ccpgamescdn.com/newssystem/media/67350/1/36381_Nemesis_Intaki_Syndicate.png);
+}
+#discord{
+  background:url(https://discordapp.com/assets/2c21aeda16de354ba5334551a883b481.png);
+}
+#teamspeak{
+  background:url(https://www.teamspeak.com/user/themes/teamspeak/images/brand/Stacked_BlueLight.svg);
+}
+.logo-service{
+  margin-top: 40px;
+  width:90%;
+  height:150px;
+  padding:5px;
+
+  background-position: center !important; 
+  border-radius:10px !important;
+  background-size: contain !important; 
+  background-repeat: no-repeat !important;
 }
 
 
