@@ -1,8 +1,8 @@
 import React from 'react';
 
-import OsmiumFittingWidget from "../Components/Eve/OsmiumFittingWidget";
+//import OsmiumFittingWidget from "../Components/Eve/OsmiumFittingWidget";
 
-const fittingData = [
+/*const fittingData = [
   {
     name: "Manticore",
     fittings: [
@@ -24,7 +24,7 @@ const fittingData = [
     ]
   }
 
-];
+];*/
 
 function FittingsView() {
   return (

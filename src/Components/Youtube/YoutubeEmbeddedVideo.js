@@ -11,7 +11,7 @@ function YoutubeEmbeddedVideo({ videoId, width = 560, height = 315, allowFullScr
       src={getVideoEmbedUrl(videoId)}
       frameBorder={frameBorder}
       allowFullScreen={allowFullScreen}
-      wmode="Opaque">
+      wmode="Opaque" title="Bombersbar ad">
     </iframe>
   );
 }

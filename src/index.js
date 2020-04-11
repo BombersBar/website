@@ -10,12 +10,12 @@ import FaqView from './Views/Faq';
 import FittingsView from './Views/Fittings';
 import Terminology from './Views/Terminology';
 import Donations from './Views/Donations';
-import Motd from './Views/Motd';
+//import Motd from './Views/Motd';
 
 
 
 import './index.css';
-
+//<Route path="/motd" component={Motd} />  
 ReactDOM.render((
     <Router>
       <App>
@@ -26,7 +26,6 @@ ReactDOM.render((
         <Route path="/obombercare" component={Obombercare} />
         <Route path="/terminology" component={Terminology} />
         <Route path="/donations" component={Donations} />
-        <Route path="/motd" component={Motd} />
       </App>
     </Router>
   ),

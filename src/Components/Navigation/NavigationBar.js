@@ -8,16 +8,11 @@ function NavigationBar() {
     <div className="navigationBar">
       <h2>
         <Link className="logoName" to="/">
-          <img className="bblogo" src={require('../../../public/bombersbarlogo.jpg')} alt=''/>
+          <img className="bblogo" src={require('../../images/bombersbarlogo.jpg')} alt=''/>
           <span className="bbName">Bombers Bar</span>
         </Link>
       </h2>
     <ul>
-     <li>
-        <Link to="/motd">
-          MOTD
-        </Link>
-      </li>
       <li>
         <Link to="/faq">
           FAQ

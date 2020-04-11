@@ -4,7 +4,7 @@ import "./obombercare.css";
 function ObombercareView() {
   return (
     <div className="OutsideContainer">
-      <img className="iskIcon" src={require('../../public/u01B5.png')} alt=''/>
+      <img className="iskIcon" src={require('../images/u01B5.png')} alt=''/>
       <div className="InsideContainer">
         <span className="titleObombercare">ENJOY O'BOMBERCARE!</span>
         <p className="titleObombercare">Search “Vova Nalentis” in game, read the instructions below or in her bio, and send her the killmail accordingly.</p>
