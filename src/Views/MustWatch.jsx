@@ -35,6 +35,10 @@ const newBroData = [
 
 const bomberGandaData = [
   {
+    header: "Nova Valentis - History of BB",
+    youtubeId: 'eUKNM5ftpqU',
+  },
+  {
     header: '80 Bombers Melt a Rorqual',
     youtubeId: 'xrVEekw5lg8',
   },
