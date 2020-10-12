@@ -20,5 +20,7 @@
     }
     .App-header{
       background:linear-gradient(to right, #FF4136, #c4121e);
+      border-bottom:0px solid #ccc;
+
     }
 }

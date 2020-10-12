@@ -16,6 +16,14 @@
   color:#fff;
 }
 
+@media (prefers-color-scheme: dark){
+  .infoBox{
+    border-bottom: 0px solid #ccc;
+    border-left: 0px solid #ccc;
+    border-right: 0px solid #ccc;
+  }
+}
+
 .infoBoxText strong{
   padding-left: 5px;
   padding-right: 5px;
