@@ -41,3 +41,13 @@
 .logoName{
   float: left;
 }
+
+
+@media (prefers-color-scheme: dark){
+  .navigationBar ul li a {
+    color:#fff !important;
+  }
+  .navigationBar h2 a {
+    color:#fff !important;
+  }
+}
