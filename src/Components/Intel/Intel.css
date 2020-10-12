@@ -12,7 +12,7 @@
   display:flex;
   align-items: center;
   justify-content: center;
-  background-color: #FF4136 ;
+  background:linear-gradient(to right, #FF4136, #c4121e) ;
   color:#fff;
 }
 

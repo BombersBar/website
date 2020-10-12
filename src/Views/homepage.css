@@ -120,6 +120,7 @@ ul.tableList li:last-child:before {
   background-color: #f8f8f8;
 }
 
+
 .howToJoinInner{
   padding-top: 30px;
   padding-bottom: 30px;
@@ -136,7 +137,14 @@ ul.tableList li:last-child:before {
   padding-right: 15px;
   padding-left: 15px;
 }
-
+@media (prefers-color-scheme: dark) {
+  .howToJoinOuter{
+    background:linear-gradient(to right, #FF4136, #c4121e);
+  }
+  .howToJoinInner,.howToJoinContents{
+  color:#E3E3E3 !important;
+  }
+}
 
 .doctrineTitle{
   padding: 0px;

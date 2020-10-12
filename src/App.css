@@ -10,3 +10,15 @@
   border-bottom:1px solid #ccc;
 }
 
+@media (prefers-color-scheme: dark) {
+    body{
+      background: #141e30; /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #141e30, #243b55); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #141e30, #243b55); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      color:#fff !important;
+      /*background-color: #003049;*/
+    }
+    .App-header{
+      background:linear-gradient(to right, #FF4136, #c4121e);
+    }
+}

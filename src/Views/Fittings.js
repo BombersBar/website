@@ -47,7 +47,7 @@ function FittingsView() {
 
         <h1><b>Fittings Coming Soon !!</b></h1>
         <h2> For now check out our ingame fittings channel " BB-Fittings* "</h2>
-        <h3> Feel free to ask any questions in the bombers bar channel or on slack</h3>
+        <h3> Feel free to ask any questions in the bombers bar channel or on discord</h3>
         <br/>        <br/>        <br/>        <br/>
     </div>
   );
