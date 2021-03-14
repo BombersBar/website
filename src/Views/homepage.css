@@ -208,8 +208,10 @@ box-shadow: 0px 0px 10px rgba(0,0,0,.5);
 #discord{
   background:url(https://discordapp.com/assets/2c21aeda16de354ba5334551a883b481.png);
 }
-#teamspeak{
-  background:url(https://www.teamspeak.com/user/themes/teamspeak/images/brand/Stacked_BlueLight.svg);
+#teamspeak {
+  /*background:url(https://www.teamspeak.com/user/themes/teamspeak/images/brand/Stacked_BlueLight.svg);*/
+  /*background: url(https://i.imgur.com/QmvPsXX.png);*/
+  background: url("./../images/ts_logo.png");
 }
 .logo-service{
   margin-top: 40px;

@@ -62,13 +62,13 @@ export default class Homepage extends React.Component {
             <a href="https://discord.gg/8HnFGnP" target="_blank" rel="noopener noreferrer" >
               <div className="homepageButtonContainer-button">
                 <div className="logo-service" id="discord"></div>
-                <h3><span className="name"></span></h3>
+                <h3><span className="name">Discord</span></h3>
               </div>
             </a>
             <a href="ts3server://voice.bombersbar.org?port=9987">
               <div className="homepageButtonContainer-button">
                 <div className="logo-service" id="teamspeak"></div>
-                <h3><span className="name"></span></h3>
+                <h3><span className="name">Teamspeak (comms)</span></h3>
               </div>
             </a>
             <Link to="/fittings">
