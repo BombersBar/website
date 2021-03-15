@@ -26,7 +26,7 @@ const faqData = [
   },
   {
     "header": "6. Fleet Types",
-    "body": "The general fleet types we run are; Whaling,Amarda,Wolfpack and Bombing fleets. Click here to view the Fleet Types Page which explains each fleet type in more detail."
+    "body": "The general fleet types we run are; Whaling, Amarda, Habakuk, Wolfpack and Bombing fleets. Click here to view the Fleet Types Page which explains each fleet type in more detail."
   },
    {
     "header": "8. Overview that I should have?",

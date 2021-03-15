@@ -132,10 +132,12 @@ ul.tableList li:last-child:before {
   color: hsl(356, 83%, 42%);
 }
 
-.howToJoinContents{
-  color:black;
+.howToJoinContents {
+  color: black;
   padding-right: 15px;
   padding-left: 15px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 @media (prefers-color-scheme: dark) {
   .howToJoinOuter{
@@ -163,7 +165,9 @@ ul.tableList li:last-child:before {
   flex-direction: column;  /* make main axis vertical */
   justify-content: center; /* center items vertically, in this case */
   align-items: center;   
-  height:51vh;
+  /*height:51vh;*/
+  padding-top:50px;
+  padding-bottom:100px;
 }
 
 

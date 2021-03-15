@@ -86,6 +86,38 @@ export default class Homepage extends React.Component {
             </Link>
           </div>
         </div>
+        <div className="howToJoinOuter">
+          <div className="howToJoinInner">
+            <h1> How to join a fleet?</h1>
+            <table >
+              <tbody>
+                <tr>
+                  <td width='33%'>
+                    <h3>STEP 1</h3>
+                    <p className="howToJoinContents">
+                      Join the in game chat channel “Bombers Bar”, the discord channel linked above, and install Teamspeak3 and bookmark the Bombers Bar teamspeak comms also linked above.
+                      </p>
+                  </td>
+                  <td width='33%'>
+                    <h3> STEP 2</h3>
+                    <p className="howToJoinContents">
+                      Check out time and date for the next fleet. Fleets are in the BB channel MOTD and will be listed in the announcements channel of the discord. Consider having your ship fitted and ready in place well in advance of fleet start.
+                      </p>
+                  </td>
+                  <td width='33%'>
+                    <h3>STEP 3</h3>
+                    <p className="howToJoinContents">
+                      Bring your ship to the preannounced staging system, and X up in the linked Xup channel when that channel gets linked as the scheduled fleet time approaches. Accept the fleet invite and you’re in!
+                      </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h4>Bombers Bar does not have a static staging system but it is recommended to have clones & ships ready in: Jita, Amarr, and Thera as well as other major trade hubs.</h4>
+          </div>
+        </div>
+
+
         <h1>Reasons To Join Bombers Bar Fleets</h1>
         <table className="table">
           <tbody>
@@ -183,6 +215,7 @@ export default class Homepage extends React.Component {
 
         <div className="doctrine">
           <h1 className="doctrineTitle">Bombers Bar Fleet Types</h1>
+          
           <div>
             <h2>Whaling / Armada Fleets</h2>
             <ul className="tableList">
@@ -215,30 +248,6 @@ export default class Homepage extends React.Component {
             </ul>
           </div>
           <div>
-            <h2>Wolfpack Fleets</h2>
-            <ul className="tableList">
-              <li>
-                <h3>TARGET: SMALL AND MEDIUM FLEETS</h3>
-                <p className="tableContents">
-                  A bomber fleet that can and will brawl. This is a fleet to fight with small and medium sized fleets.
-                  These can also be part of armada/whaling fleets and can allow us to fight rather than run when counter dropped
-                </p>
-              </li>
-              <li>
-                <h3>FAVORED: RECONS & WOLFPACK FIT BOMBERS</h3>
-                <p className="tableContents">
-                  Bring wolfpact fit bombers (wolfpack fits available in the fitting page and in game channels) for maximum range and damage application, or recons to make sure the fleets cant get away.
-                </p>
-              </li>
-              <li>
-                <h3>FLEET OBJECTIVE: GUDFITES</h3>
-                <p className="tableContents">
-                  Camp gates or roam and look good doing it. Using a mixture of bombs and torps to destroy enemy fleets.
-                </p>
-              </li>
-            </ul>
-          </div>
-          <div>
             <h2>Bombing Fleets</h2>
             <ul className="tableList">
               <li>
@@ -266,84 +275,101 @@ export default class Homepage extends React.Component {
               </li>
             </ul>
           </div>
-          <div className="howToJoinOuter">
-            <div className="howToJoinInner">
-              <h1> How to join a fleet?</h1>
-              <table >
-                <tbody>
-                  <tr>
-                    <td>
-                      <h3>STEP 1</h3>
-                      <p className="howToJoinContents">
-                        Join the in game chat channel “Bombers Bar” , the mailing list “Bombers Bar ML”, and sign up for the Bombers Bar slack.
-                      </p>
-                    </td>
-                    <td>
-                      <h3> STEP 2</h3>
-                      <p className="howToJoinContents">
-                        Check out time and date for the next fleet. Fleets are in the BB channel MOTD and will be announced on Slack.
-                        Also checkout the <Link to="/motd">MOTD</Link> on this site which is pulled directly from in game.
-                      </p>
-                    </td>
-                    <td>
-                      <h3>STEP 3</h3>
-                      <p className="howToJoinContents">
-                        Bring your ship to the preannounced staging system, and X up in the channel when the fleet time comes. Accept the fleet invite and You’re in!
-                      </p>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-              <h4>Bombers Bar does not have a static staging system but it is recommended to have clones & ships ready in: Jita, Amarr aswell as other major trade hubs.</h4>
-            </div>
+          <div>
+            <h2>Habakuk Fleets</h2>
+            <ul className="tableList">
+              <li>
+                <h3>TARGET: INDIVIDUALS AND SMALL FLEETS</h3>
+                <p className="tableContents">
+                  Hotdrop on gatecamps and other targets of opportunity in low sec. Staging out of high sec makes for very chill fleet environment that can still move around to cover large swaths of space.
+                </p>
+              </li>
+              <li>
+                <h3>FAVORED: RECONS & HABAKUK FIT BOMBERS</h3>
+                <p className="tableContents">
+                  Bring Habakuk fit bombers for lots of ewar and damage application, or recons to make sure the fleets can't get away or shoot back at us.
+                </p>
+              </li>
+              <li>
+                <h3>FLEET OBJECTIVE: SHOCK AND AWE</h3>
+                <p className="tableContents">
+                  Overwhelm the unsuspecting victims with supiorior numbers and DPS. Render their ship powerless in an onslaught of ewar and fireworks before volleying them off the field.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2>Wolfpack Fleets</h2>
+            <ul className="tableList">
+              <li>
+                <h3>TARGET: SMALL AND MEDIUM FLEETS</h3>
+                <p className="tableContents">
+                  A bomber fleet that can and will brawl. This is a fleet to fight with small and medium sized fleets.
+                  These can also be part of armada/whaling fleets and can allow us to fight rather than run when counter dropped
+                </p>
+              </li>
+              <li>
+                <h3>FAVORED: RECONS & WOLFPACK FIT BOMBERS</h3>
+                <p className="tableContents">
+                  Bring wolfpact fit bombers (wolfpack fits available in the fitting page and in game channels) for maximum range and damage application, or recons to make sure the fleets cant get away.
+                </p>
+              </li>
+              <li>
+                <h3>FLEET OBJECTIVE: GUDFITES</h3>
+                <p className="tableContents">
+                  Camp gates or roam and look good doing it. Using a mixture of bombs and torps to destroy enemy fleets.
+                </p>
+              </li>
+            </ul>
           </div>
 
-          <div className="inline">
-            <div className="alignLeft">
-              {topDonationLastWeek.length > 0 ?
-                <div>
-                  <h1>Top Donations Over the Last Week</h1>
-                  <div>
-                    { topDonationLastWeek.map((item, index) => (
-                      <Donation item={item} key={index} />
-                    ))}
-                  </div>
-                </div>:
-                <div>
-                  <h1>Top Donations Over the Last Month</h1>
-                  <div>
-                    { topDonationLastMonth.map((item, index) => (
-                      <Donation item={item} key={index} />
-                    ))}
-                  </div>
-                </div>
-              }
-            </div>
-            <div className="alignRight">
-              <span className="bottomSpacing">
-                <h1> How to donate?</h1>
-                <h4> Go to bombers bar channel right click "The Bombers Bar" and click give money </h4>
-                <img src={require('../images/donation.png')} alt=''/>
-                <h3 className="donationsSee">Want to see more <Link to="/donations">Donations?</Link></h3>
-              </span>
-            </div>
-          </div>
-
-          <h1>Recent Victims</h1>
-          <h2> Highest Value Kills </h2>
+          {/*<div className="inline">*/}
+          {/*  <div className="alignLeft">*/}
+          {/*    {topDonationLastWeek.length > 0 ?*/}
+          {/*      <div>*/}
+          {/*        <h1>Top Donations Over the Last Week</h1>*/}
+          {/*        <div>*/}
+          {/*          { topDonationLastWeek.map((item, index) => (*/}
+          {/*            <Donation item={item} key={index} />*/}
+          {/*          ))}*/}
+          {/*        </div>*/}
+          {/*      </div>:*/}
+          {/*      <div>*/}
+          {/*        <h1>Top Donations Over the Last Month</h1>*/}
+          {/*        <div>*/}
+          {/*          { topDonationLastMonth.map((item, index) => (*/}
+          {/*            <Donation item={item} key={index} />*/}
+          {/*          ))}*/}
+          {/*        </div>*/}
+          {/*      </div>*/}
+          {/*    }*/}
+          {/*  </div>*/}
+          {/*  <div className="alignRight">*/}
+          {/*    <span className="bottomSpacing">*/}
+          {/*      <h1> How to donate?</h1>*/}
+          {/*      <h4> Go to bombers bar channel right click "The Bombers Bar" and click give money </h4>*/}
+          {/*      <img src={require('../images/donation.png')} alt=''/>*/}
+          {/*      */}{/*<h3 className="donationsSee">Want to see more <Link to="/donations">Donations?</Link></h3>*/}
+          {/*    </span>*/}
+          {/*  </div>*/}
+          {/*</div>*/}
         </div>
-        { kills.map((kill, index) => (
-          <span>
-            {index < 2 &&
-            <Victim kill={kill} key={index} />
-            }
-          </span>
-        ))
-        }
-        <span className="bottomSpacing">
-          <h3 className="donationsSee">Want to see more <Link to="/motd">Kills?</Link></h3>
-          <h4> Check the <Link to="/motd">MOTD</Link> to find out when the next fleet is so you can be on the next big killmail </h4>
-        </span>
+
+
+        {/*<h1>Recent Victims</h1>*/}
+        {/*<h2> Highest Value Kills </h2>*/}
+        {/*{ kills.map((kill, index) => (*/}
+        {/*  <span>*/}
+        {/*    {index < 2 &&*/}
+        {/*    <Victim kill={kill} key={index} />*/}
+        {/*    }*/}
+        {/*  </span>*/}
+        {/*))*/}
+        {/*}*/}
+        {/*<span className="bottomSpacing">*/}
+        {/*  <h3 className="donationsSee">Want to see more <Link to="/motd">Kills?</Link></h3>*/}
+        {/*  <h4> Check the <Link to="/motd">MOTD</Link> to find out when the next fleet is so you can be on the next big killmail </h4>*/}
+        {/*</span>*/}
       </div>
     );
   }
