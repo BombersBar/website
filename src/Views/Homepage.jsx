@@ -293,7 +293,7 @@ export default class Homepage extends React.Component {
               <li>
                 <h3>FLEET OBJECTIVE: SHOCK AND AWE</h3>
                 <p className="tableContents">
-                  Overwhelm the unsuspecting victims with supiorior numbers and DPS. Render their ship powerless in an onslaught of ewar and fireworks before volleying them off the field.
+                  Overwhelm the unsuspecting victims with superior numbers and DPS. Render their ship powerless in an onslaught of ewar and fireworks before volleying them off the field.
                 </p>
               </li>
             </ul>
