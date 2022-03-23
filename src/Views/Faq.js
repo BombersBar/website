@@ -64,12 +64,12 @@ const faqData = [
 
 function FaqView() {
   return (
-    <div className="faqContainer">
+    <div className="contentContainer faqContainer">
     <h1>FAQ</h1>
       { faqData.map((item, index) => (
         <div className="faqData" key={index}>
-          <h3 className="faqHeader"><strong>{item.header}</strong></h3>
-          <p className="faqBody"><strong>{item.body}</strong></p>
+          <h3 className="faqHeader">{item.header}</h3>
+          <p className="faqBody">{item.body}</p>
         </div>
       )) }
     </div>

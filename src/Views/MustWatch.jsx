@@ -97,7 +97,7 @@ export default class MustWatchView extends React.Component {
       }],
     };
     return (
-      <div className='MustWatchContainer'>
+      <div className='contentContainer MustWatchContainer'>
         <div className='NewBroVideos'>
           <h2>NewBro Videos</h2>
           <Slider {...settings}>

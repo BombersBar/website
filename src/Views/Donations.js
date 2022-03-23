@@ -63,7 +63,7 @@ export default class Donations extends React.Component {
 
 
     return (
-    <div className="donationContainer">
+    <div className="contentContainer donationContainer">
       <h1>Largest Donation of Last Month</h1>
             { donationsTopEver.map((item, index) => (
               <Donation item={item} key={index}  />

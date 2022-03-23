@@ -28,7 +28,7 @@ import React from 'react';
 
 function FittingsView() {
   return (
-<div className="OutsideContainer">
+<div className="contentContainer fittingsContainer">
       { /* fittingData.map((ship) => (
         <div key={ship.name}>
           <h2>{ship.name}</h2>

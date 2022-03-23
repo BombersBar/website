@@ -162,7 +162,7 @@ const rosterList = [
 
 function RosterView() {
   return (
-    <div className="rosterContainer">
+    <div className="contentContainer rosterContainer">
       <h1>FC Roster</h1>
       { rosterList.map(function (item, index) {
         var picStyle = "background: " + "../images/".concat(item.profilePic);
