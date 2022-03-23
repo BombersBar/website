@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  font-size: 16px;
+  color: rgb(34, 34, 34);
 }
 
 .App-header {
@@ -7,7 +9,14 @@
   height: 100px;
   color: white;
   box-shadow: 0 0.15em 0.35em 0 rgba(0,0,0,0.135);
-  border-bottom:1px solid #ccc;
+  border-bottom:1px solid #ccc;  
+}
+
+.contentContainer {
+  padding-top: 100px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;  
 }
 
 @media (prefers-color-scheme: dark) {

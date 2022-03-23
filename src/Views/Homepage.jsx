@@ -51,11 +51,16 @@ export default class Homepage extends React.Component {
     );
 
     return (
-      <div className="homepageContainer">
+      <div className="contentContainer homepageContainer">
         <div>
           <h1>The NPSI Community For Cloakies</h1>
-          <p className="homepageTitle">The “Not Purple Shoot It” fleets allow cloaky enthusiasts from all over New Eden to come together in a fleet.
-            No corporations. No politics. Just pretty explosions and Green Killboards.</p>
+          <p className="homepageTitle">The “Not Purple Shoot It” fleets allow cloaky enthusiasts from all over New Eden to come together in a fleet.<br/><br/>
+            <b>
+              No corporations. <br/>
+              No politics.  <br/>
+              Just pretty explosions and Green Killboards.
+            </b>
+          </p>            
         </div>
         <div id="wrapper">
           <div id="grid">

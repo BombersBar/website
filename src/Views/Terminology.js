@@ -130,7 +130,7 @@ const terminologyData = [
 
 function terminologyView() {
   return (
-    <div className="terminologyContainer">
+    <div className="contentContainer terminologyContainer">
     <h1>Terminology</h1>
     <h3>These are certain terms used during fleet that you need to know and understand</h3>
       { terminologyData.map((item, index) => (

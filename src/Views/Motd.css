@@ -1,18 +1,3 @@
-.motdContainer{
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top:3rem;
-  margin-bottom: 3rem;
-  border-bottom:1px solid #ccc;
-  border-left:1px solid #ccc;
-  border-right:1px solid #ccc;
-  border-top:none;
-  border-radius: 4px;
-
-  box-shadow: 0 0.15em 0.35em 0 rgba(0,0,0,0.135);
-}
-
 .kill .body {
   padding: 5px;
   height: 152px;/* 200 - 20 - 4*7px */

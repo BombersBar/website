@@ -3,6 +3,7 @@ import NavigationBar from './Components/Navigation/NavigationBar';
 import Intel from './Components/Intel/Intel';
 
 import './App.css';
+import './Fonts.css'
 
 
 class App extends Component {
