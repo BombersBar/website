@@ -1,16 +1,45 @@
+/* Light theme */
+:root {
+  --background-color: rgb(255, 255, 255);
+  --highlight-color: rgb(248, 248, 248);
+  --cta-color: rgb(196, 18, 30);
+  --cta-hover-color: rgb(41, 50, 60);
+  --font-color: rgb(34, 34, 34);
+  --bright-font-color: rgb(248, 248, 248);
+  --header-color:  rgb(196, 18, 30);
+  --link-color: rgb(34, 34, 34);
+  --shadow-color: rgba(0,0,0,0.135);
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: rgb(29, 29, 29);
+    --highlight-color: rgb(41, 41, 41);
+    --cta-color: rgb(129, 11, 19);
+    --cta-hover-color: rgb(41, 50, 60);
+    --font-color: rgb(190, 190, 190);
+    --bright-font-color: rgb(190, 190, 190);
+    --header-color:  rgb(167, 44, 52);
+    --link-color: rgb(216, 216, 216);
+    --shadow-color: rgba(0,0,0,0.135);
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
   overflow-y: scroll;
+  background-color: var(--background-color);
 }
 
 h1, h2, h3, h4, h4, h5, h6 {
   font-family: 'Poppins', 'Montserrat', sans-serif;
   font-weight: 400;
-  color: hsl(356, 83%, 42%);
+  color:var(--header-color);
 }
 
 a {
-  color:#fff;  
+  color: var(--link-color);  
 }
