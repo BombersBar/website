@@ -18,11 +18,15 @@
 
 .navigationBar ul li a {
   text-decoration: none;
-  color: hsl(0,100%,32%);
+  color: var(--font-color);
+}
+
+.navigationBar ul li a:hover {
+  color: var(--header-color);
 }
 
 .navigationBar h2 a {
-  color: hsl(0,100%,32%);
+  color: var(--header-color);
   text-decoration: none;
 }
 
@@ -40,14 +44,4 @@
 
 .logoName{
   float: left;
-}
-
-
-@media (prefers-color-scheme: dark){
-  .navigationBar ul li a {
-    color:#fff !important;
-  }
-  .navigationBar h2 a {
-    color:#fff !important;
-  }
 }

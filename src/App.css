@@ -1,14 +1,13 @@
 .App {
   text-align: center;
   font-size: 16px;
-  color: rgb(34, 34, 34);
+  color: var(--font-color);
 }
 
 .App-header {
-  background-color: white;
+  background-color: var(--background-color);
   height: 100px;
-  color: white;
-  box-shadow: 0 0.15em 0.35em 0 rgba(0,0,0,0.135);
+  box-shadow: 0 0.15em 0.35em 0 var(--shadow-color);
   border-bottom:1px solid #ccc;  
 }
 
@@ -17,19 +16,4 @@
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;  
-}
-
-@media (prefers-color-scheme: dark) {
-    body{
-      background: #141e30; /* fallback for old browsers */
-      background: -webkit-linear-gradient(to right, #141e30, #243b55); /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(to right, #141e30, #243b55); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-      color:#fff !important;
-      /*background-color: #003049;*/
-    }
-    .App-header{
-      background:linear-gradient(to right, #FF4136, #c4121e);
-      border-bottom:0px solid #ccc;
-
-    }
 }

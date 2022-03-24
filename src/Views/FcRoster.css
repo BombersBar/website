@@ -12,11 +12,3 @@
   margin-right: 10%;
   margin-bottom: 3rem;
 }
-
-@media (prefers-color-scheme: dark) {
-  .rosterContainer {
-    border-bottom: 1px solid #c7151f;
-    border-left: 1px solid #c7151f;
-    border-right: 1px solid #c7151f;
-  }
-}

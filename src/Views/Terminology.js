@@ -138,7 +138,7 @@ function terminologyView() {
           <h4 className="terminologyHeader"><strong>{item.header}</strong></h4>
           <ul>
           {item.subList.map((item, index) => (
-            <li><p dangerouslySetInnerHTML={{ __html: item.body }} className="terminologySub"/></li>
+            <li key={index}><p dangerouslySetInnerHTML={{ __html: item.body }} className="terminologySub"/></li>
             ))}
           </ul>
         </div>

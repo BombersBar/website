@@ -1,11 +1,8 @@
 import React from 'react';
-import axios from 'axios';
 import { Link } from 'react-router-dom';
-import Donation from '../Components/Donations/donation'
-import Victim from '../Components/kills/Victim'
-import config from '../config';
-
 import './homepage.css';
+// import Donation from '../Components/Donations/donation'
+// import Victim from '../Components/kills/Victim'
 
 export default class Homepage extends React.Component {
   constructor(props) {
@@ -18,49 +15,18 @@ export default class Homepage extends React.Component {
     };
   }
 
-  componentDidMount() {
-    axios.get('https://n1b.ch/api/donations/top', {
-      params: {
-        days: 7,
-        limit: 4,
-      },
-    }).then((res) => {
-      const topDonationLastWeek = res.data.map(obj => obj) || [];
-      this.setState({ topDonationLastWeek });
-    });
-    axios.get('https://n1b.ch/api/donations/top', {
-      params: {
-        days: 30,
-        limit: 4,
-      },
-    }).then((res) => {
-      const topDonationLastMonth = res.data.map(obj => obj) || [];
-      this.setState({ topDonationLastMonth });
-    });
-    axios.get(config.apiUrl + '/motd/kills')
-      .then((res) => {
-        const kills = res.data || [];
-        this.setState({ kills });
-      });
-  }
   render() {
-    const { topDonationLastWeek, topDonationLastMonth, kills } = this.state;
-
-    kills.sort((a, b) =>
-      parseFloat(b.totalValue) - parseFloat(a.totalValue),
-    );
-
     return (
       <div className="contentContainer homepageContainer">
         <div>
           <h1>The NPSI Community For Cloakies</h1>
-          <p className="homepageTitle">The “Not Purple Shoot It” fleets allow cloaky enthusiasts from all over New Eden to come together in a fleet.<br/><br/>
+          <p className="homepageTitle">The “Not Purple Shoot It” fleets allow cloaky enthusiasts from all over New Eden to come together in a fleet.<br /><br />
             <b>
-              No corporations. <br/>
-              No politics.  <br/>
+              No corporations. <br />
+              No politics.  <br />
               Just pretty explosions and Green Killboards.
             </b>
-          </p>            
+          </p>
         </div>
         <div id="wrapper">
           <div id="grid">
@@ -101,19 +67,19 @@ export default class Homepage extends React.Component {
                     <h3>STEP 1</h3>
                     <p className="howToJoinContents">
                       Join the in game chat channel “Bombers Bar”, the discord channel linked above, and install Teamspeak3 and bookmark the Bombers Bar teamspeak comms also linked above.
-                      </p>
+                    </p>
                   </td>
                   <td width='33%'>
                     <h3> STEP 2</h3>
                     <p className="howToJoinContents">
                       Check out time and date for the next fleet. Fleets are in the BB channel MOTD and will be listed in the announcements channel of the discord. Consider having your ship fitted and ready in place well in advance of fleet start.
-                      </p>
+                    </p>
                   </td>
                   <td width='33%'>
                     <h3>STEP 3</h3>
                     <p className="howToJoinContents">
                       Bring your ship to the preannounced staging system, and X up in the linked Xup channel when that channel gets linked as the scheduled fleet time approaches. Accept the fleet invite and you’re in!
-                      </p>
+                    </p>
                   </td>
                 </tr>
               </tbody>
@@ -126,101 +92,115 @@ export default class Homepage extends React.Component {
         <h1>Reasons To Join Bombers Bar Fleets</h1>
         <table className="table">
           <tbody>
-            <td>
-              <tr>
-                <ul className="tableList">
-                  <li>
-                    <h3> WE ARE VERY NEWBRO FRIENDLY</h3>
-                    <p className="tableContents">
-                      It doesnt matter when you've started playing EVE.
-                      As soon as you can fly a cloaky ship you are welcome to join our fleets.
-                    </p>
-                  </li>
-                  <li>
-                    <h3>BROADEN YOUR HORIZONS</h3>
-                    <p className="tableContents">
-                      Get information about all different types of play from mining and incursions to the best fits for solo fights.
-                    </p>
-                  </li>
-                  <li>
-                    <h3>BE MORE THAN JUST AN F1 MONKEY!!</h3>
-                    <p className="tableContents">
-                      Take more responsibilty with sebo bombers to help recons or fly a recon or hunter yourself.
-                    </p>
-                  </li>
-                  <li>
-                    <h3>THIS IS NOT A CORP OR ALLIANCE!! </h3>
-                    <p className="tableContents">
-                      Theres no corp or alliance to join you just have to X-up and come along.
-                    </p>
-                  </li>
-                  <li>
-                    <h3>BLOW UP SHIT!!</h3>
-                    <p className="tableContents">
-                      Easy access to PVP and dank green killboards.
-                    </p>
-                  </li>
-                  <li>
-                    <h3>OBOMBERCARE</h3>
-                    <p className="tableContents">
-                      (sometimes referred to as SRP or Trumpedo care) <br />
-                      Dont be afraid about losing your ship we will give you isk to completely or atleast partially for lose.
-                      (If your flying bomber/recon/hunter others bring at your own risk)
-                    </p>
-                  </li>
-                </ul>
-              </tr>
-            </td>
-            <td>
-              <tr>
-                <ul className="tableList">
-                  <li>
-                    <h3>WE HAVE NO POLITICS AND NO DRAMA</h3>
-                    <p className="tableContents">
-                      One of the only permanent rules in Bombers Bar.
-                      Fly with who you want to and who you enjoy flying with!
-                    </p>
-                  </li>
-                  <li>
-                    <h3>NETWORKING / MAKING FRIENDS</h3>
-                    <p className="tableContents">
-                      Meet people from all over EVE and build connections beyond your alliance/corp boundries
-                      Your always welcome on bb comms to chill , ask questions, try get csm votes or to try start your own roam.
-                    </p>
-                  </li>
-                  <li>
-                    <h3>BE JUST AN F1 MONKEY!!</h3>
-                    <p className="tableContents">
-                      SCREW RESPONSIBILITY. JUST ALIGN OUT, HIT F1, WATCH EXPLOSIONS, GG
-                    </p>
-                  </li>
-                  <li>
-                    <h3>YOU COULD EARN ISK WHILE YOU PLAY</h3>
-                    <p className="tableContents">
-                      Hunters and FCs receive a portion of loot in fleets.
-                    </p>
-                  </li>
-                  <li>
-                    <h3>HAVE FUN!!</h3>
-                    <p className="tableContents">
-                      Come along and watch netflix while you wait or join in chatting do whatever will let you have fun.
-                    </p>
-                  </li>
-                  <li>
-                    <h3>BE LURED IN BY FALSE ADVERTISEMENT!</h3>
-                    <p className="tableContents">
-                      wait... what?
-                    </p>
-                  </li>
-                </ul>
-              </tr>
-            </td>
+            <tr>
+              <td>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <ul className="tableList">
+                          <li>
+                            <h3> WE ARE VERY NEWBRO FRIENDLY</h3>
+                            <p className="tableContents">
+                              It doesnt matter when you've started playing EVE.
+                              As soon as you can fly a cloaky ship you are welcome to join our fleets.
+                            </p>
+                          </li>
+                          <li>
+                            <h3>BROADEN YOUR HORIZONS</h3>
+                            <p className="tableContents">
+                              Get information about all different types of play from mining and incursions to the best fits for solo fights.
+                            </p>
+                          </li>
+                          <li>
+                            <h3>BE MORE THAN JUST AN F1 MONKEY!!</h3>
+                            <p className="tableContents">
+                              Take more responsibilty with sebo bombers to help recons or fly a recon or hunter yourself.
+                            </p>
+                          </li>
+                          <li>
+                            <h3>THIS IS NOT A CORP OR ALLIANCE!! </h3>
+                            <p className="tableContents">
+                              Theres no corp or alliance to join you just have to X-up and come along.
+                            </p>
+                          </li>
+                          <li>
+                            <h3>BLOW UP SHIT!!</h3>
+                            <p className="tableContents">
+                              Easy access to PVP and dank green killboards.
+                            </p>
+                          </li>
+                          <li>
+                            <h3>OBOMBERCARE</h3>
+                            <p className="tableContents">
+                              (sometimes referred to as SRP or Trumpedo care) <br />
+                              Dont be afraid about losing your ship we will give you isk to completely or atleast partially for lose.
+                              (If your flying bomber/recon/hunter others bring at your own risk)
+                            </p>
+                          </li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+              <td>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                      <ul className="tableList">
+                        <li>
+                          <h3>WE HAVE NO POLITICS AND NO DRAMA</h3>
+                          <p className="tableContents">
+                            One of the only permanent rules in Bombers Bar.
+                            Fly with who you want to and who you enjoy flying with!
+                          </p>
+                        </li>
+                        <li>
+                          <h3>NETWORKING / MAKING FRIENDS</h3>
+                          <p className="tableContents">
+                            Meet people from all over EVE and build connections beyond your alliance/corp boundries
+                            Your always welcome on bb comms to chill , ask questions, try get csm votes or to try start your own roam.
+                          </p>
+                        </li>
+                        <li>
+                          <h3>BE JUST AN F1 MONKEY!!</h3>
+                          <p className="tableContents">
+                            SCREW RESPONSIBILITY. JUST ALIGN OUT, HIT F1, WATCH EXPLOSIONS, GG
+                          </p>
+                        </li>
+                        <li>
+                          <h3>YOU COULD EARN ISK WHILE YOU PLAY</h3>
+                          <p className="tableContents">
+                            Hunters and FCs receive a portion of loot in fleets.
+                          </p>
+                        </li>
+                        <li>
+                          <h3>HAVE FUN!!</h3>
+                          <p className="tableContents">
+                            Come along and watch netflix while you wait or join in chatting do whatever will let you have fun.
+                          </p>
+                        </li>
+                        <li>
+                          <h3>BE LURED IN BY FALSE ADVERTISEMENT!</h3>
+                          <p className="tableContents">
+                            wait... what?
+                          </p>
+                        </li>
+                      </ul>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
           </tbody>
         </table>
 
         <div className="doctrine">
           <h1 className="doctrineTitle">Bombers Bar Fleet Types</h1>
-          
+
           <div>
             <h2>Whaling / Armada Fleets</h2>
             <ul className="tableList">
@@ -327,54 +307,7 @@ export default class Homepage extends React.Component {
               </li>
             </ul>
           </div>
-
-          {/*<div className="inline">*/}
-          {/*  <div className="alignLeft">*/}
-          {/*    {topDonationLastWeek.length > 0 ?*/}
-          {/*      <div>*/}
-          {/*        <h1>Top Donations Over the Last Week</h1>*/}
-          {/*        <div>*/}
-          {/*          { topDonationLastWeek.map((item, index) => (*/}
-          {/*            <Donation item={item} key={index} />*/}
-          {/*          ))}*/}
-          {/*        </div>*/}
-          {/*      </div>:*/}
-          {/*      <div>*/}
-          {/*        <h1>Top Donations Over the Last Month</h1>*/}
-          {/*        <div>*/}
-          {/*          { topDonationLastMonth.map((item, index) => (*/}
-          {/*            <Donation item={item} key={index} />*/}
-          {/*          ))}*/}
-          {/*        </div>*/}
-          {/*      </div>*/}
-          {/*    }*/}
-          {/*  </div>*/}
-          {/*  <div className="alignRight">*/}
-          {/*    <span className="bottomSpacing">*/}
-          {/*      <h1> How to donate?</h1>*/}
-          {/*      <h4> Go to bombers bar channel right click "The Bombers Bar" and click give money </h4>*/}
-          {/*      <img src={require('../images/donation.png')} alt=''/>*/}
-          {/*      */}{/*<h3 className="donationsSee">Want to see more <Link to="/donations">Donations?</Link></h3>*/}
-          {/*    </span>*/}
-          {/*  </div>*/}
-          {/*</div>*/}
         </div>
-
-
-        {/*<h1>Recent Victims</h1>*/}
-        {/*<h2> Highest Value Kills </h2>*/}
-        {/*{ kills.map((kill, index) => (*/}
-        {/*  <span>*/}
-        {/*    {index < 2 &&*/}
-        {/*    <Victim kill={kill} key={index} />*/}
-        {/*    }*/}
-        {/*  </span>*/}
-        {/*))*/}
-        {/*}*/}
-        {/*<span className="bottomSpacing">*/}
-        {/*  <h3 className="donationsSee">Want to see more <Link to="/motd">Kills?</Link></h3>*/}
-        {/*  <h4> Check the <Link to="/motd">MOTD</Link> to find out when the next fleet is so you can be on the next big killmail </h4>*/}
-        {/*</span>*/}
       </div>
     );
   }
