@@ -30,7 +30,7 @@ export default class Homepage extends React.Component {
         </div>
         <div id="wrapper">
           <div id="grid">
-            <a href="https://discord.gg/8HnFGnP" target="_blank" rel="noopener noreferrer" >
+            <a href="https://discord.gg/4jwHJMeQ49" target="_blank" rel="noopener noreferrer" >
               <div className="homepageButtonContainer-button">
                 <div className="logo-service" id="discord"></div>
                 <h3><span className="name">Discord</span></h3>
