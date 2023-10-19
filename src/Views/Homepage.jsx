@@ -66,7 +66,7 @@ export default class Homepage extends React.Component {
                   <td width='33%'>
                     <h3>STEP 1</h3>
                     <p className="howToJoinContents">
-                      Join the in game chat channel “Bombers Bar”, the discord channel linked above, and install Teamspeak3 and bookmark the Bombers Bar teamspeak comms also linked above.
+                      Join the in game chat channel “BB: Bombers Bar”, the discord channel linked above, and install Teamspeak3 and bookmark the Bombers Bar teamspeak comms also linked above.
                     </p>
                   </td>
                   <td width='33%'>
