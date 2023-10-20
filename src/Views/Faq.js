@@ -4,28 +4,31 @@ import "./Faq.css";
 // This the faq data, it is mapped to HTML elements below!
 // The reason for this as an array is that we can extract into a rest call later down the line, if we introduce a server
 const faqData = [
-  {
-    "header": "1. How to join us on TS?",
-    "body": "There is a fixed address and password in the Bombers Bar channel that you should use to join our Teamspeak server. When you initially connect you will be in the \"Main Lobby\". From here you should be able to join the various public channels and hang out with your fellow cloaky space nerds. When a fleet is starting and you x up in the BB in-game channel, you are called into fleet. Switch to the in-game Fleet chat window, in the MOTD you will see the relevant TS channel to use (usually BB Roam 1) together with new password. Join us there!"
+  { "header": "1. There's a new channel and discord server?",
+    "body": "As of October 2023, Bombers Bar has moved to new services. The new in-game main channel is \"BB: Bombers Bar\" and the link to the new discord server can be found on the website homepage. You can leave the old main channel and discord if you're still in them as those will no longer be used or updated."
   },
   {
-    "header": "2. TS password is not working?",
+    "header": "2. How to join us on TS?",
+    "body": "There is a fixed address and password in the \"BB: Bombers Bar\" channel that you should use to join our Teamspeak server. When you initially connect you will be in the \"Main Lobby\". From here you should be able to join the various public channels and hang out with your fellow cloaky space nerds. When a fleet is starting and you x up in the BB in-game channel, you are called into fleet. Switch to the in-game Fleet chat window, in the MOTD you will see the relevant TS channel to use (usually BB Roam 1) together with new password. Join us there!"
+  },
+  {
+    "header": "3. TS password is not working?",
     "body": "The FC has a lot to do and is probably a little behind. Move to the staging system and just put a reminder in the fleet chat window and your FC will update it shortly in the fleet MOTD"
   },
   {
-    "header": "3. X-Up (like lemmings do)",
-    "body": "Bombers Bar is precise timewise. If fleet is said to start at 19:00, x-ing up at 18:50 will only cause comments of you being premature in all things in life (yes, hints on sexual life). One premature x-ing up brings others to do the same, which is called lemming behavior. Often some senior BB pilots intentionally provoke/troll others by starting premature x-up sequence. Ignore them, they are mean. Wait for the FC to call up for X-up in the Bombers Bar channel MOTD."
+    "header": "4. What is an X-up?",
+    "body": "Simple, just type an \"x\" in a channel. An X-up channel for joining fleet will be linked in the main channel when fleet is starting and while fleet is still accepting members. The FC might ask you to volunteer in the fleet channel for one reason or another, too."
   },
   {
-    "header": "4. My mic is offline",
+    "header": "5. My mic is offline",
     "body": "We don’t like people having muted mic's. Offline mic's may be a clear signal to us that you are speaking in some other channel, to some other group… So expect to be asked to unmute your mic if caught"
   },
   {
-    "header": "5. MOTD (Message Of The Day)",
+    "header": "6. MOTD (Message Of The Day)",
     "body": "In your fleet chat window have a look at the MOTD. Be sure to reload it often because info will change from time to time. Reload by left-clicking small donut icon on the top and clicking \"Reload MOTD\". The MOTD has some important info such as; who is the fleet BLOPS (Black Ops ship that will bridge us to the target), who is the FC and what staging system you should travel to. The BLOPS and FC pilots are two most important characters in fleet, you should put them in your WATCHLIST. To do this; Rightclick the name of the BLOPS pilot, in that menu open pick “Fleet” then “Add to Watchlist”, repeat for the FC or anybody else you want keep an eye on. You can drag and drop them from the fleet chat window to watchlist also. Keep it as simple as possible and the BLOPS pilot should always be put on the top of the list."
   },
   {
-    "header": "6. Fleet Types",
+    "header": "7. Fleet Types",
     "body": "The general fleet types we run are; Whaling, Amarda, Habakuk, Wolfpack and Bombing fleets. Click here to view the Fleet Types Page which explains each fleet type in more detail."
   },
    {
