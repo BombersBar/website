@@ -38,8 +38,6 @@ function ObombercareView() {
           <li>Industrial - 10m</li>
           <li>Battleship - 75m</li>
           <li></li>
-          <li>RobberKnights:</li>
-          <li>Stratios - 230m</li>
         </ul>
       </div>
     </div>
